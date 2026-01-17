@@ -1,5 +1,23 @@
 # MaryJ ATL Website Changelog
 
+## 2026-01-17 — Contact Page Image & Footer Social Icons
+
+### Contact Page
+- Added royalty-free hero image (professional communication theme)
+
+### Footer Updates (All Pages)
+- Added Bootstrap Icons CDN to all HTML pages
+- Added social media icon links to footer:
+  - Instagram (@divorcerealtormaryj)
+  - YouTube (@maryj-uncoupled)
+  - Facebook (maryjatl)
+  - TikTok (@maryjatl)
+
+### Pages Updated
+- All 11 HTML pages updated with footer social media icons
+
+---
+
 ## 2026-01-17 — Layout & Social Media Updates
 
 ### Homepage Updates
