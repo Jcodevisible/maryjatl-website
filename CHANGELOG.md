@@ -1,5 +1,23 @@
 # MaryJ ATL Website Changelog
 
+## 2026-01-17 — Navigation & Strategy Consult Updates
+
+### Navigation
+- Added "Home" tab to navigation on all pages
+
+### Strategy Consult Page
+- Updated pricing from $350 to $150
+- Clarified "What It Is" section:
+  - "Equity considerations (high-level, not a valuation)"
+  - "This consult is informational in nature..."
+- Changed "Seller/Buyer representation" to "Buyer or seller representation"
+- Expanded sale strategy options with sub-bullets
+
+### Documentation
+- Converted strategy consult.txt to strategy-consult.md (cleaner markdown format)
+
+---
+
 ## 2026-01-17 — Add CLAUDE.md with Brand Rules
 
 ### Documentation
