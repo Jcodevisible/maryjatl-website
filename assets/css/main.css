@@ -92,6 +92,26 @@ a:hover {
   text-decoration: none;
 }
 
+/* Small inline links styled as mini buttons */
+main.main section p a:not(.btn):not(.btn-cta):not(.logo),
+main.main section .alert a,
+main.main .copyright a {
+  background: #1A1A1A !important;
+  color: #ffffff !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+  font-size: 0.9em !important;
+  display: inline-block;
+}
+
+main.main section p a:not(.btn):not(.btn-cta):not(.logo):hover,
+main.main section .alert a:hover,
+main.main .copyright a:hover {
+  background: #2D2D2D !important;
+  color: #ffffff !important;
+}
+
 /* Global Button Styles - Black background with white text */
 .btn-cta,
 .btn-submit,
