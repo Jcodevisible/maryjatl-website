@@ -1376,6 +1376,7 @@ section,
   width: 100%;
   height: 400px;
   object-fit: cover;
+  object-position: center 20%;
 }
 
 @media (max-width: 768px) {
@@ -6321,6 +6322,7 @@ section,
 --------------------------------------------------------------*/
 .services .service-block {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 40px;
   background: var(--surface-color);
@@ -6353,7 +6355,15 @@ section,
   text-align: right;
 }
 
-.services .service-block:nth-child(even) .service-content .service-number {
+.services .service-block:nth-child(even) .service-header {
+  flex-direction: row-reverse;
+}
+
+.services .service-block:nth-child(even) .service-body {
+  flex-direction: row-reverse;
+}
+
+.services .service-block:nth-child(even) .service-number {
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), #ff6b35 20%), var(--accent-color));
 }
 
@@ -6362,26 +6372,40 @@ section,
   min-width: 0;
 }
 
+.services .service-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.services .service-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+}
+
 .services .service-number {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #4285f4 20%));
   color: var(--contrast-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 20px;
+  flex-shrink: 0;
   box-shadow: 0 8px 20px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .services .service-info h4 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin: 0;
   color: var(--heading-color);
 }
 
@@ -6446,19 +6470,32 @@ section,
   transition: transform 0.3s ease;
 }
 
-.services .service-image {
+.services .service-image-wrapper {
+  flex-shrink: 0;
   width: 280px;
+}
+
+.services .service-image {
+  width: 100%;
   height: 200px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  flex-shrink: 0;
+}
+
+.services .service-action {
+  text-align: center;
+}
+
+.services .service-block:nth-child(even) .service-action {
+  text-align: center;
 }
 
 .services .service-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
   transition: transform 0.4s ease;
 }
 
