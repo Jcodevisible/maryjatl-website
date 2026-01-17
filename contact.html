@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — MaryJ ATL</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Brand Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">MaryJ ATL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
+            <li class="nav-item"><a class="nav-link" href="request-cma.html">Request a CMA</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: auto; padding: 4rem 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>Contact</h1>
+            <p>Confidential communication for homeowners, attorneys, and other professionals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="bg-cream">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Info -->
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h2>Get in Touch</h2>
+            <address class="mt-4">
+              <p class="mb-1"><strong>MaryJ ATL</strong></p>
+              <p class="text-muted mb-3"><!-- Brokerage Name --></p>
+              <p class="mb-1"><!-- Address Line 1 --></p>
+              <p class="mb-3"><!-- City, State ZIP --></p>
+              <p class="mb-1">
+                <a href="tel:+1"><!-- Phone Number --></a>
+              </p>
+              <p>
+                <a href="mailto:"><!-- Email Address --></a>
+              </p>
+            </address>
+
+            <div class="mt-4 pt-4" style="border-top: 1px solid #ddd;">
+              <h3 class="h5">Confidentiality</h3>
+              <p class="small text-muted">All communications are treated as confidential. Information shared through this form will not be disclosed to third parties without your consent, except as required by law or professional obligation.</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7 offset-lg-1">
+            <h2>Send a Message</h2>
+            <p class="mb-4">All inquiries are handled confidentially.</p>
+
+            <form>
+              <fieldset class="mb-4">
+                <legend>Your Information</legend>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="contact-name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="contact-name" name="contact-name" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="contact-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="contact-email" name="contact-email" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="contact-phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="contact-phone" name="contact-phone">
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="mb-4">
+                <legend>Your Inquiry</legend>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="inquiry-type" class="form-label">I am a:</label>
+                    <select class="form-select" id="inquiry-type" name="inquiry-type">
+                      <option value="">Select one</option>
+                      <option value="homeowner">Homeowner</option>
+                      <option value="attorney">Attorney</option>
+                      <option value="mediator">Mediator</option>
+                      <option value="financial-professional">Financial Professional</option>
+                      <option value="other-professional">Other Professional</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="inquiry-subject" class="form-label">Subject</label>
+                    <select class="form-select" id="inquiry-subject" name="inquiry-subject">
+                      <option value="">Select one</option>
+                      <option value="strategy-consult">Request a Strategy Consult</option>
+                      <option value="cma-request">Request a Comparative Market Analysis</option>
+                      <option value="attorney-resources">Attorney Resources</option>
+                      <option value="listing-inquiry">Listing Inquiry</option>
+                      <option value="general">General Question</option>
+                    </select>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="mb-4">
+                <legend>Preferred Contact Method</legend>
+                <div class="d-flex gap-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contact-preference" id="pref-email" value="email">
+                    <label class="form-check-label" for="pref-email">Email</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contact-preference" id="pref-phone" value="phone">
+                    <label class="form-check-label" for="pref-phone">Phone</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contact-preference" id="pref-either" value="either" checked>
+                    <label class="form-check-label" for="pref-either">Either</label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Response Expectations -->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>What to Expect</h2>
+            <p>I respond to inquiries within one business day. If your matter is time-sensitive, please indicate this in your message.</p>
+            <p class="text-muted">There is no obligation associated with reaching out. Initial consultations are an opportunity to discuss your situation and determine whether my services are appropriate for your needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <p class="footer-brand">MaryJ ATL</p>
+          <p class="small text-white-50">Real estate guidance for divorce, separation, and major life transitions.</p>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <nav>
+            <ul class="nav flex-column">
+              <li><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
+              <li><a class="nav-link" href="services.html">Services</a></li>
+              <li><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
+              <li><a class="nav-link" href="request-cma.html">Request a CMA</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-4">
+          <nav>
+            <ul class="nav flex-column">
+              <li><a class="nav-link" href="get-prequalified.html">Get Prequalified</a></li>
+              <li><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
+              <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+        <div class="col-12">
+          <p class="small text-white-50 mb-0"><!-- License and brokerage information --></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
