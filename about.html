@@ -22,6 +22,9 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Plyr Video Player -->
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
@@ -99,7 +102,7 @@
                   <div class="hero-content" data-aos="fade-left" data-aos-delay="250">
                     <h2>Jameela Esa</h2>
                     <p class="text-muted mb-2">Certified Divorce Real Estate Specialist</p>
-                    <p class="text-muted mb-4">Keller Williams Realty Atlanta Partners</p>
+                    <p class="text-muted mb-4">Keller Williams Realty Atlanta Partners NE</p>
                     <p class="hero-description">I help individuals and families navigate one of life's most significant transitions — selling a home during or after divorce.</p>
                   </div>
                 </div>
@@ -113,10 +116,23 @@
         <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-10">
             <div class="content-block">
-              <h3>Background</h3>
-              <p>I've been a licensed REALTOR in Georgia since 2019, specializing in residential real estate and divorce-related property sales. My approach combines real estate knowledge with an understanding of the financial, legal, and personal complexities that arise during major life transitions.</p>
-              <p>Before focusing on real estate, I built a career in technology. I currently serve as a Senior Customer Experience Program Manager at Microsoft, where I lead strategic initiatives focused on customer satisfaction and operational processes. With over 15 years of experience in Information Technology — including roles as a Software Engineer, Support Engineer, and Program Manager — I developed analytical and problem-solving skills that inform how I approach real estate transactions.</p>
-              <p>I hold a Master's degree in Computer Information Systems.</p>
+              <div class="row align-items-center">
+                <div class="col-lg-7">
+                  <h3>Background</h3>
+                  <p>I've been a licensed REALTOR in Georgia since 2019, specializing in residential real estate and divorce-related property sales. My approach combines real estate knowledge with an understanding of the financial, legal, and personal complexities that arise during major life transitions.</p>
+                  <p>Before focusing on real estate, I built a career in technology. I currently serve as a Senior Customer Experience Program Manager at Microsoft, where I lead strategic initiatives focused on customer satisfaction and operational processes. With over 15 years of experience in Information Technology — including roles as a Software Engineer, Support Engineer, and Program Manager — I developed analytical and problem-solving skills that inform how I approach real estate transactions.</p>
+                  <p>I hold a Master's degree in Computer Information Systems.</p>
+                </div>
+                <div class="col-lg-5 mt-4 mt-lg-0">
+                  <!-- VIDEO PLACEHOLDER: Replace with your Atlanta aerial video -->
+                  <div class="rounded shadow-sm d-flex align-items-center justify-content-center" style="background-color: #F8F5F0; aspect-ratio: 16/9; width: 100%;">
+                    <div class="text-center">
+                      <i class="bi bi-play-circle" style="font-size: 3rem; color: #C9A227;"></i>
+                      <p class="mt-2 mb-0" style="color: #2D2D2D; font-family: 'Playfair Display', serif;">Coming Soon</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -190,7 +206,7 @@
                     <dd class="col-sm-7 mb-2">Georgia Real Estate License #400282</dd>
 
                     <dt class="col-sm-5 mb-2">Brokerage</dt>
-                    <dd class="col-sm-7 mb-2">Keller Williams Realty Atlanta Partners</dd>
+                    <dd class="col-sm-7 mb-2">Keller Williams Realty Atlanta Partners NE</dd>
                   </dl>
                 </div>
                 <div class="col-md-6">
@@ -320,7 +336,8 @@
           <h4>Contact</h4>
           <p>Jameela Esa, REALTOR</p>
           <p>License #400282</p>
-          <p>Keller Williams Realty Atlanta Partners</p>
+          <p>Keller Williams Realty Atlanta Partners NE</p>
+          <img src="assets/logos/kwlogo.jpg" alt="Keller Williams" style="height: 30px;" class="mt-2">
         </div>
 
       </div>
@@ -347,6 +364,14 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Plyr Video Player -->
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    const atlantaPlayer = new Plyr('#atlanta-player', {
+      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen']
+    });
+  </script>
 
 </body>
 
