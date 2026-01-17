@@ -1,5 +1,24 @@
 # MaryJ ATL Website Changelog
 
+## 2026-01-17 — Royalty-Free Images & Profile Updates
+
+### Images Added
+- Added Unsplash images to pages missing visuals:
+  - request-cma.html — Home valuation image
+  - mortgage-calculator.html — Financial planning image
+  - get-prequalified.html — Documentation image
+  - strategy-consult.html — Professional consultation image
+
+### Profile Photo Updates
+- Updated all pages to use new photoshoot profile image (profile-image.png)
+- Replaced maryj-professional.jpg and maryj-studio.png references
+
+### Layout Consistency
+- Standardized hero section padding to 2rem across all pages
+- Added hero images to pages that were text-only
+
+---
+
 ## 2026-01-17 — Strategy Consult Page & Hero Updates
 
 ### New Page

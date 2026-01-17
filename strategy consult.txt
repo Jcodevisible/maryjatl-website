@@ -82,5 +82,97 @@ CALL TO ACTION
 Request a Strategy Consult →
 
 ========================================
+BROKERAGE, INVOICING & TRANSACTION RULES
+========================================
+
+The Real Estate Strategy Consult is provided under:
+Keller Williams Realty Atlanta Partners
+
+This service is classified as:
+- A NON-AGENCY real estate consultation
+- Provided to a CUSTOMER, not a client
+- A paid, transactional service
+- Brokerage income (not personal income)
+
+No agency relationship is created by this service.
+
+========================================
+INVOICING LANGUAGE (LOCKED)
+========================================
+
+When referenced on invoices, receipts, or internal documentation,
+the service must be described as:
+
+"Real Estate Strategy Consultation (Non-Agency)"
+
+Description:
+Professional real estate market analysis and strategic guidance.
+No legal or financial advice provided.
+
+Do NOT use:
+- Listing consultation
+- Pre-listing
+- Seller representation
+- Client services
+
+========================================
+KWCOMMAND TRANSACTION HANDLING
+========================================
+
+This service must be entered into KWCommand as:
+
+- A non-commission / consultation transaction
+- No listing side
+- No buyer side
+- No sales price
+- Gross amount: $350
+
+Documentation to upload may include:
+- Broker-approved consultation agreement OR
+- Brokerage Relationships Disclosure showing CUSTOMER status
+- Consultation invoice/receipt
+- Proof of payment
+
+========================================
+LISTING AGREEMENT RULE (LOCKED)
+========================================
+
+A Strategy Consult MUST NOT require:
+- A Listing Agreement
+- An Exclusive Right to Sell
+- Buyer brokerage agreements
+
+Signing a listing agreement at this stage would incorrectly create agency.
+
+Agency is established ONLY if a separate listing agreement is executed later.
+
+========================================
+CREDIT AT CLOSING RULE
+========================================
+
+If a listing proceeds, the Strategy Consult fee MAY be credited at closing.
+
+This language must:
+- Use the word "may"
+- Remain understated
+- Never be positioned as a guarantee or incentive
+
+========================================
+PROFESSIONAL CONTEXT (IMPORTANT)
+========================================
+
+This structure is intentional and required because:
+
+- Attorneys must be able to refer clients without creating agency
+- Judges would expect clear scope and non-agency disclosure
+- Customers receive clarity without pressure
+- Brokerage compliance is maintained
+
+If any instruction conflicts with brokerage policy,
+Claude must defer to broker guidance and request clarification.
+========================================
+
+
+========================================
 END OF PAGE COPY
 ========================================
