@@ -305,5 +305,287 @@ For each page:
 - Return one code block per page
 
 ========================================
+SITE ARCHITECTURE & PAGE STRUCTURE (LOCKED)
+========================================
+
+The maryjatl website is structured as a
+professional, seller-focused, court-aware guidance site.
+
+All pages must follow:
+- Calm, editorial pacing
+- Attorney/Judge-safe tone
+- Seller-only positioning
+- Semantic HTML outlines only (structure first)
+
+========================================
+PRIMARY NAVIGATION (LOCKED)
+========================================
+
+Top-level navigation:
+
+- Home
+- Services
+- Attorney Resources
+- Featured Properties
+- Contact
+
+Secondary CTAs appear contextually
+and must follow CTA language rules.
+
+========================================
+PAGE-BY-PAGE STRUCTURE & LAYOUT
+========================================
+
+----------------------------------------
+HOME PAGE
+----------------------------------------
+
+Purpose:
+- Establish authority
+- Signal dual audience
+- Introduce core pathways
+- Preview (not exhaust) content
+
+Required sections (in order):
+
+1. Header / Navigation
+
+2. Hero (locked copy)
+   - Primary CTA: Request a Strategy Consult
+
+3. Areas of Focus
+   - Static list (no icons, no widgets)
+
+4. Evidence-Based Guidance
+   - Conceptual indicators only
+
+5. Dual-Audience Guidance Block
+   - Two-column paired section:
+     • Attorneys/Judges
+     • Homeowners
+   - Separate CTAs per column
+
+6. UNCoupled Reference Block
+   - Locked copy
+   - 1–2 Client Perspective videos max
+   - Outbound links only
+
+7. Featured Properties (Preview)
+   - Tagged as "Life Transition Sale"
+   - Active / Completed status
+   - No prices, no performance language
+   - Link to full Featured Properties page
+
+8. Final Editorial CTA
+   - Locked copy
+   - Single CTA: Request a Strategy Consult
+
+9. Footer
+
+----------------------------------------
+SERVICES PAGE
+----------------------------------------
+
+Purpose:
+- Explain scope without selling
+- Replace traditional “services list”
+- Orient both audiences
+
+Structure:
+
+1. Page Intro (editorial)
+
+2. Paired Service Blocks (repeatable pattern):
+   - Left: Attorneys & Court
+   - Right: Homeowners
+   - Each block includes:
+     • Short explanatory copy
+     • One appropriate CTA per audience
+
+3. Embedded Wizards (allowed here):
+   - Life Transition Sale Overview (wizard)
+   - Delay / Timing Considerations Overview
+   - Equity Snapshot (planning tool)
+
+4. Soft CTA section
+   - Links to Strategy Consult or CMA
+   - No urgency language
+
+----------------------------------------
+ATTORNEY RESOURCES PAGE
+----------------------------------------
+
+Purpose:
+- Credibility anchor
+- Referral-safe destination
+- Documentation clarity
+
+Structure:
+
+1. Page Intro (professional, scoped)
+
+2. Scope of Role
+   - Explicit non-agency framing
+
+3. Documentation Provided
+   - CMA
+   - Pricing posture
+   - Timing context
+
+4. Attorney Documentation Checklist (widget)
+   - Expand/collapse list
+
+5. Optional Wizard:
+   - Documentation Needs Overview
+
+6. CTA:
+   - Request Market Documentation
+
+----------------------------------------
+STRATEGY CONSULT PAGE
+----------------------------------------
+
+Purpose:
+- Define paid consult
+- Set expectations
+- Support invoicing & compliance
+
+Structure:
+
+1. Page Intro
+
+2. What the Strategy Consult Is
+
+3. What It Is Not
+
+4. What Is Covered
+
+5. Pricing Section
+   - Flat fee
+   - Optional credit language
+
+6. Time / Format / Confidentiality
+
+7. CTA:
+   - Request a Strategy Consult
+
+----------------------------------------
+REQUEST A CMA PAGE
+----------------------------------------
+
+Purpose:
+- Replace “What’s my home worth?”
+- Attorney-safe valuation intake
+
+Structure:
+
+1. Page Intro
+
+2. CMA Request Wizard
+   - Property basics
+   - Context selector
+   - Intended use (attorney, mediation, clarity)
+
+3. Confirmation / Next Steps
+   - No instant values
+
+4. CTA:
+   - Request CMA
+   - Secondary: Strategy Consult
+
+----------------------------------------
+FEATURED PROPERTIES PAGE
+----------------------------------------
+
+Purpose:
+- Portfolio-style credibility
+- Illustrative, not promotional
+
+Structure:
+
+1. Page Intro (editorial framing)
+
+2. Property Grid
+   - Tagged "Life Transition Sale"
+   - Active / Completed
+   - External links only
+
+3. Optional Filter:
+   - Life Transition Sale
+   - Active
+   - Completed
+
+4. Contextual Disclaimer
+
+5. CTA:
+   - Request a Strategy Consult
+
+----------------------------------------
+MORTGAGE PAYMENT CALCULATOR PAGE
+----------------------------------------
+
+Purpose:
+- Planning context only
+- Post-sale / buy-out scenarios
+
+Structure:
+
+1. Page Intro (clear disclaimers)
+
+2. Mortgage Payment Planning Tool
+   - No buying language
+   - No lender promotion
+
+3. Contextual Explanation
+   - How this supports planning
+
+4. CTA:
+   - Strategy Consult
+
+----------------------------------------
+CONTACT PAGE
+----------------------------------------
+
+Purpose:
+- Low-pressure entry
+- Confidentiality signaling
+
+Structure:
+
+1. Page Intro
+
+2. Contact Form
+   - Neutral language
+   - No urgency
+
+3. Alternative Paths
+   - Strategy Consult
+   - Attorney Resources
+
+========================================
+WIZARD & WIDGET PLACEMENT RULES
+========================================
+
+Allowed wizards/widgets:
+
+- Life Transition Sale Overview (wizard)
+- CMA Request Wizard
+- Equity Snapshot (planning tool)
+- Delay / Timing Considerations Overview
+- Mortgage Payment Planning Tool
+- Attorney Documentation Checklist
+
+Rules:
+- Informational only
+- No predictions
+- No gamification
+- No buyer/renter content
+- Always include disclaimers
+- Wizards support clarity, not decisions
+
+
+
+
+========================================
 END OF INSTRUCTIONS
 ========================================
