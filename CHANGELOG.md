@@ -1,5 +1,22 @@
 # MaryJ ATL Website Changelog
 
+## 2026-01-17 — Add CLAUDE.md with Brand Rules
+
+### Documentation
+- Created **CLAUDE.md** for Claude Code guidance, incorporating all locked brand rules from conversation.md:
+  - Brand essence & voice (calm, editorial, restrained)
+  - Design rules (white/cream/gold palette, typography)
+  - Seller-only content restrictions
+  - Dual-audience communication (attorneys/judges primary)
+  - CTA language rules
+  - Locked homepage copy (verbatim)
+  - Featured properties rules ("Life Transition Sale" tags)
+  - UNCoupled external reference rules
+  - Semantic HTML requirements
+  - Development commands and file structure
+
+---
+
 ## 2026-01-17 — Contact Page Image & Footer Social Icons
 
 ### Contact Page
