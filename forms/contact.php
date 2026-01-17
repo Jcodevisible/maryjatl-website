@@ -1,13 +1,10 @@
 <?php
   /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
+  * MaryJ ATL Contact Form Handler
+  * Handles submissions from all site forms: contact, CMA request, prequalification, strategy consult
   */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  $receiving_email_address = 'maryj.atl@kw.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -17,26 +14,92 @@
 
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
-  
+
   $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+  $contact->from_name = $_POST['name'] ?? 'Website Visitor';
+  $contact->from_email = $_POST['email'] ?? 'noreply@maryjatl.com';
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+  // Determine subject based on form type
+  $form_type = $_POST['form_type'] ?? 'contact';
+  switch($form_type) {
+    case 'cma':
+      $contact->subject = 'CMA Request from MaryJ ATL Website';
+      break;
+    case 'prequalification':
+      $contact->subject = 'Prequalification Request from MaryJ ATL Website';
+      break;
+    case 'strategy-consult':
+      $contact->subject = 'Strategy Consult Request from MaryJ ATL Website';
+      break;
+    default:
+      $contact->subject = $_POST['subject'] ?? 'New Inquiry from MaryJ ATL Website';
+  }
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  isset($_POST['phone']) && $contact->add_message($_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+  // Common fields
+  $contact->add_message($_POST['name'] ?? '', 'Name');
+  $contact->add_message($_POST['email'] ?? '', 'Email');
+  if (!empty($_POST['phone'])) {
+    $contact->add_message($_POST['phone'], 'Phone');
+  }
+
+  // Role (for contact form)
+  if (!empty($_POST['role'])) {
+    $contact->add_message($_POST['role'], 'Role');
+  }
+
+  // Property address (for CMA and strategy consult)
+  // Handle both naming conventions: property_address and property-address
+  if (!empty($_POST['property_address'])) {
+    $contact->add_message($_POST['property_address'], 'Property Address');
+  } elseif (!empty($_POST['property-address'])) {
+    $contact->add_message($_POST['property-address'], 'Property Address');
+  }
+
+  // City, State, ZIP (for CMA)
+  if (!empty($_POST['city']) || !empty($_POST['state']) || !empty($_POST['zip'])) {
+    $location = trim(($_POST['city'] ?? '') . ', ' . ($_POST['state'] ?? '') . ' ' . ($_POST['zip'] ?? ''));
+    $contact->add_message($location, 'City/State/ZIP');
+  }
+
+  // Purpose (for CMA)
+  if (!empty($_POST['purpose'])) {
+    $contact->add_message($_POST['purpose'], 'Purpose');
+  }
+
+  // Ownership status (for strategy consult)
+  if (!empty($_POST['ownership_status'])) {
+    $contact->add_message($_POST['ownership_status'], 'Ownership Status');
+  }
+
+  // Situation type (for strategy consult and CMA)
+  if (!empty($_POST['situation_type'])) {
+    $contact->add_message($_POST['situation_type'], 'Situation Type');
+  }
+
+  // Request reason (for prequalification)
+  if (!empty($_POST['request_reason'])) {
+    $contact->add_message($_POST['request_reason'], 'Purpose');
+  }
+
+  // Timeline
+  if (!empty($_POST['timeline'])) {
+    $contact->add_message($_POST['timeline'], 'Timeline');
+  }
+
+  // Format preference (for strategy consult)
+  if (!empty($_POST['format_preference'])) {
+    $contact->add_message($_POST['format_preference'], 'Preferred Format');
+  }
+
+  // Contact preference
+  if (!empty($_POST['contact_preference'])) {
+    $contact->add_message($_POST['contact_preference'], 'Contact Preference');
+  }
+
+  // Message (always last)
+  if (!empty($_POST['message'])) {
+    $contact->add_message($_POST['message'], 'Message', 10);
+  }
 
   echo $contact->send();
 ?>

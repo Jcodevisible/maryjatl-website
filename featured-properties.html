@@ -1,241 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Featured Properties — MaryJ ATL</title>
+  <meta name="description" content="Properties represented during life transitions, including divorce, separation, and estate matters.">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/icons/favicon.svg" rel="icon">
+  <link href="assets/icons/favicon.svg" rel="apple-touch-icon">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Brand Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">MaryJ ATL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link active" href="featured-properties.html">Featured Properties</a></li>
-            <li class="nav-item"><a class="nav-link" href="request-cma.html">Request CMA</a></li>
-            <li class="nav-item"><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li class="nav-item"><a class="nav-link" href="strategy-consult.html">Strategy Consult</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body class="properties-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">MaryJ ATL</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="attorney-resources.html">Attorney Resources</a></li>
+          <li><a href="featured-properties.html" class="active">Properties</a></li>
+          <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="request-cma.html">Request CMA</a></li>
+              <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+              <li><a href="get-prequalified.html">Get Prequalified</a></li>
+              <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
+  <main class="main">
 
-    <!-- Page Header -->
-    <section class="hero" style="min-height: auto; padding: 2rem 0;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <h1>Featured Properties</h1>
-            <p>Properties represented during life transitions, including divorce, separation, and estate matters.</p>
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Featured Properties</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Properties</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Properties Section -->
+    <section id="properties" class="properties section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <p class="lead">Properties represented during life transitions, including divorce, separation, and estate matters.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Filter -->
-    <section class="section-sm bg-cream">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav aria-label="Property filter">
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#" style="color: var(--color-black); font-weight: 500;">All Properties</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Active Listings</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Completed Sales</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Property Grid -->
+        <div class="row gy-4">
 
-    <!-- Property Listings -->
-    <section>
-      <div class="container">
-        <div class="row stagger-children">
-          <!-- Property 1 - Real Sale -->
-          <div class="col-md-6 col-lg-4">
-            <article class="property-card">
-              <div class="property-card-image">
-                <img src="https://photos.prod.cirrussystem.net/903/5d4b29b55cebea5ce9733f72e2041a4f/437394518.jpeg" alt="3160 Drayton Manor Run, Lawrenceville">
-              </div>
-              <div class="property-card-body">
+          <!-- Property 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://photos.prod.cirrussystem.net/903/5d4b29b55cebea5ce9733f72e2041a4f/437394518.jpeg" alt="3160 Drayton Manor Run, Lawrenceville" class="img-fluid">
+                <span class="property-status status-sold">Sold</span>
                 <span class="property-tag">Life Transition Sale</span>
-                <span class="property-status">Sold — $427,000</span>
-                <h3>3160 Drayton Manor Run</h3>
-                <dl class="row small text-muted mb-2">
-                  <dt class="col-4">Beds</dt>
-                  <dd class="col-8">3</dd>
-                  <dt class="col-4">Baths</dt>
-                  <dd class="col-8">2.5</dd>
-                  <dt class="col-4">Sq Ft</dt>
-                  <dd class="col-8">2,955</dd>
-                </dl>
-                <p class="small text-muted">Sugarloaf Manor, Lawrenceville</p>
-                <a href="https://www.zillow.com/homedetails/3160-Drayton-Manor-Run-Lawrenceville-GA-30046/80154750_zpid/" target="_blank" class="btn btn-secondary btn-sm">View on Zillow</a>
               </div>
-            </article>
+              <div class="property-content">
+                <h4>3160 Drayton Manor Run</h4>
+                <p class="property-location"><i class="bi bi-geo-alt"></i> Lawrenceville, GA 30046</p>
+                <div class="property-price">$427,000</div>
+                <div class="property-features">
+                  <span><i class="bi bi-door-closed"></i> 3 Beds</span>
+                  <span><i class="bi bi-droplet"></i> 2.5 Baths</span>
+                  <span><i class="bi bi-arrows-angle-expand"></i> 2,955 sqft</span>
+                </div>
+                <p class="property-neighborhood">Sugarloaf Manor</p>
+                <a href="https://www.zillow.com/homedetails/3160-Drayton-Manor-Run-Lawrenceville-GA-30046/80154750_zpid/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">View on Zillow</a>
+              </div>
+            </div>
           </div>
 
-          <!-- Property 2 - Real Sale -->
-          <div class="col-md-6 col-lg-4">
-            <article class="property-card">
-              <div class="property-card-image">
-                <img src="https://photos.zillowstatic.com/fp/e01b4ff28e90433c8fa568060b75881c-cc_ft_960.webp" alt="3528 Woodshade Dr, Loganville">
-              </div>
-              <div class="property-card-body">
+          <!-- Property 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://photos.zillowstatic.com/fp/e01b4ff28e90433c8fa568060b75881c-cc_ft_960.webp" alt="3528 Woodshade Dr, Loganville" class="img-fluid">
+                <span class="property-status status-sold">Sold</span>
                 <span class="property-tag">Life Transition Sale</span>
-                <span class="property-status">Sold — $325,000</span>
-                <h3>3528 Woodshade Dr</h3>
-                <dl class="row small text-muted mb-2">
-                  <dt class="col-4">Beds</dt>
-                  <dd class="col-8">4</dd>
-                  <dt class="col-4">Baths</dt>
-                  <dd class="col-8">2</dd>
-                  <dt class="col-4">Sq Ft</dt>
-                  <dd class="col-8">3,804</dd>
-                </dl>
-                <p class="small text-muted">Loganville, GA</p>
-                <a href="https://www.zillow.com/homedetails/3528-Woodshade-Dr-Loganville-GA-30052/98001882_zpid/" target="_blank" class="btn btn-secondary btn-sm">View on Zillow</a>
               </div>
-            </article>
+              <div class="property-content">
+                <h4>3528 Woodshade Dr</h4>
+                <p class="property-location"><i class="bi bi-geo-alt"></i> Loganville, GA 30052</p>
+                <div class="property-price">$325,000</div>
+                <div class="property-features">
+                  <span><i class="bi bi-door-closed"></i> 4 Beds</span>
+                  <span><i class="bi bi-droplet"></i> 2 Baths</span>
+                  <span><i class="bi bi-arrows-angle-expand"></i> 3,804 sqft</span>
+                </div>
+                <a href="https://www.zillow.com/homedetails/3528-Woodshade-Dr-Loganville-GA-30052/98001882_zpid/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">View on Zillow</a>
+              </div>
+            </div>
           </div>
 
-          <!-- Property 3 - Real Sale -->
-          <div class="col-md-6 col-lg-4">
-            <article class="property-card">
-              <div class="property-card-image">
-                <img src="https://maps.googleapis.com/maps/api/streetview?location=51B+Coffee+Ln%2C+Ellenwood%2C+GA+30294&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=quTz4taQpveIcsaI9evM32w7yvk=" alt="51B Coffee Ln, Ellenwood">
-              </div>
-              <div class="property-card-body">
+          <!-- Property 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="property-card">
+              <div class="property-img">
+                <img src="https://maps.googleapis.com/maps/api/streetview?location=51B+Coffee+Ln%2C+Ellenwood%2C+GA+30294&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=quTz4taQpveIcsaI9evM32w7yvk=" alt="51B Coffee Ln, Ellenwood" class="img-fluid">
+                <span class="property-status status-sold">Sold</span>
                 <span class="property-tag">Life Transition Sale</span>
-                <span class="property-status">Sold</span>
-                <h3>51B Coffee Ln</h3>
-                <dl class="row small text-muted mb-2">
-                  <dt class="col-4">Beds</dt>
-                  <dd class="col-8">5</dd>
-                  <dt class="col-4">Baths</dt>
-                  <dd class="col-8">4</dd>
-                  <dt class="col-4">Sq Ft</dt>
-                  <dd class="col-8">3,084</dd>
-                </dl>
-                <p class="small text-muted">Ellenwood, GA</p>
               </div>
-            </article>
+              <div class="property-content">
+                <h4>51B Coffee Ln</h4>
+                <p class="property-location"><i class="bi bi-geo-alt"></i> Ellenwood, GA 30294</p>
+                <div class="property-features">
+                  <span><i class="bi bi-door-closed"></i> 5 Beds</span>
+                  <span><i class="bi bi-droplet"></i> 4 Baths</span>
+                  <span><i class="bi bi-arrows-angle-expand"></i> 3,084 sqft</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-8">
-            <h2>Considering a Sale During a Life Transition?</h2>
-            <p class="mb-4">If you are navigating a divorce, separation, or other major change and need guidance on selling your property, I can help you understand your options.</p>
-            <a href="request-cma.html" class="btn btn-primary me-2 mb-2">Request a Comparative Market Analysis</a>
-            <a href="contact.html" class="btn btn-secondary mb-2">Request a Strategy Consult</a>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Disclaimer -->
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Important Information</h2>
-            <p class="text-muted">Properties shown represent transactions handled during life transitions. Listing information is provided for illustrative purposes. For current availability and details, view the full listing on the linked external site.</p>
+        <!-- CTA Section -->
+        <div class="cta-section mt-5" data-aos="fade-up" data-aos-delay="500">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <h3>Considering a Sale During a Life Transition?</h3>
+              <p>If you are navigating a divorce, separation, or other major change and need guidance on selling your property, I can help you understand your options.</p>
+              <div class="action-buttons">
+                <a href="request-cma.html" class="btn btn-primary">Request a CMA</a>
+                <a href="strategy-consult.html" class="btn btn-secondary">Request Strategy Consult</a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Disclaimer -->
+        <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-lg-8">
+            <div class="alert alert-light">
+              <h5>Important Information</h5>
+              <p class="mb-0 text-muted">Properties shown represent transactions handled during life transitions. Listing information is provided for illustrative purposes. For current availability and details, view the full listing on the linked external site.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <p class="footer-brand">MaryJ ATL</p>
-          <p class="small text-white-50">Real estate guidance for divorce, separation, and major life transitions.</p>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="about.html">About</a></li>
-              <li><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-              <li><a class="nav-link" href="services.html">Services</a></li>
-              <li><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-4">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="get-prequalified.html">Get Prequalified</a></li>
-              <li><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-              <li><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="mt-4">
-            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" class="text-white-50 me-3" title="YouTube"><i class="bi bi-youtube fs-5"></i></a>
-            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" class="text-white-50" title="TikTok"><i class="bi bi-tiktok fs-5"></i></a>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MaryJ ATL</span>
+          </a>
+          <p>Real estate guidance for divorce, separation, and major life transitions.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
-      </div>
-      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
-        <div class="col-12">
-          <p class="small text-white-50 mb-0"><!-- License and brokerage information --></p>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="attorney-resources.html">Attorney Resources</a></li>
+            <li><a href="featured-properties.html">Properties</a></li>
+          </ul>
         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="request-cma.html">Request CMA</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="get-prequalified.html">Get Prequalified</a></li>
+            <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact</h4>
+          <p>Jameela Esa, REALTOR</p>
+          <p>License #400282</p>
+          <p>Keller Williams Realty Atlanta Partners</p>
+        </div>
+
       </div>
     </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Each office is independently owned and operated.</p>
+    </div>
+
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

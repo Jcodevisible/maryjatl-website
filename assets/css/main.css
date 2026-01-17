@@ -12,54 +12,54 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
-/* Fonts */
+/* Fonts - MaryJ ATL Brand */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Montserrat",  sans-serif;
+  --default-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --heading-font: "Playfair Display", Georgia, serif;
+  --nav-font: "Inter", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #263a31; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #103524; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #077f46; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Global Colors - MaryJ ATL Brand Palette */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.7);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #263a31; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #077f46; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --background-color: #ffffff; /* White - Primary background */
+  --default-color: #2D2D2D; /* Text color for body content */
+  --heading-color: #1A1A1A; /* Black - Headings and titles */
+  --accent-color: #C9A227; /* Gold - Brand accent for buttons, links, CTAs */
+  --surface-color: #ffffff; /* White - Cards and boxed elements */
+  --contrast-color: #ffffff; /* White - Text on accent backgrounds */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Nav Menu Colors */
+:root {
+  --nav-color: rgba(255, 255, 255, 0.9);  /* Nav links on gold header */
+  --nav-hover-color: #1A1A1A; /* Black on hover */
+  --nav-mobile-background-color: #C9A227; /* Gold mobile menu background */
+  --nav-dropdown-background-color: #ffffff; /* Dropdown background */
+  --nav-dropdown-color: #2D2D2D; /* Dropdown text */
+  --nav-dropdown-hover-color: #C9A227; /* Gold on dropdown hover */
+}
+
+/* Color Presets - Section backgrounds */
 
 .light-background {
-  --background-color: #edf6f2;
+  --background-color: #F8F5F0; /* Cream - Contrast sections */
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #081b12;
+  --background-color: #1A1A1A; /* Black */
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #1f3028;
+  --surface-color: #2D2D2D;
   --contrast-color: #ffffff;
 }
 
 .accent-background {
-  --background-color: #077f46;
+  --background-color: #C9A227; /* Gold background for footer/accent sections */
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --accent-color: #ffffff;
-  --surface-color: #2a8f5f;
+  --accent-color: #ffffff; /* White accent on gold background */
+  --surface-color: #b89223;
   --contrast-color: #ffffff;
 }
 
@@ -154,7 +154,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #077f46;
+  --background-color: #C9A227; /* Gold - Brand color */
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);

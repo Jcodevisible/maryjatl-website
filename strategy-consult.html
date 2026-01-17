@@ -1,126 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Strategy Consult — MaryJ ATL</title>
+  <meta name="description" content="A paid, professional consultation providing clarity around market context, pricing posture, and next-step options during life transitions.">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/icons/favicon.svg" rel="icon">
+  <link href="assets/icons/favicon.svg" rel="apple-touch-icon">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Brand Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">MaryJ ATL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            <li class="nav-item"><a class="nav-link" href="request-cma.html">Request CMA</a></li>
-            <li class="nav-item"><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li class="nav-item"><a class="nav-link active" href="strategy-consult.html">Strategy Consult</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body class="strategy-consult-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">MaryJ ATL</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="attorney-resources.html">Attorney Resources</a></li>
+          <li><a href="featured-properties.html">Properties</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="request-cma.html">Request CMA</a></li>
+              <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+              <li><a href="get-prequalified.html">Get Prequalified</a></li>
+              <li><a href="strategy-consult.html" class="active">Strategy Consult</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
+  <main class="main">
 
-    <!-- Page Header -->
-    <section class="hero" style="min-height: auto; padding: 2rem 0;">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h1>Real Estate Strategy Consult</h1>
-            <p class="mb-0">Major life transitions often involve real estate decisions that carry financial, legal, and timing implications.</p>
-          </div>
-          <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Strategic planning and analysis" class="img-fluid" style="border-radius: 4px;">
-          </div>
-        </div>
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Real Estate Strategy Consult</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Strategy Consult</li>
+          </ol>
+        </nav>
       </div>
-    </section>
+    </div><!-- End Page Title -->
 
-    <!-- Intro -->
-    <section class="bg-cream">
-      <div class="container">
+    <!-- Intro Section -->
+    <section class="section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <p class="lead">The Real Estate Strategy Consult is a paid, professional session designed to provide clarity around market context, pricing posture, and next-step options before decisions are made.</p>
-            <p class="text-muted">This consultation is neutral, documented, and focused on understanding — not pressure.</p>
+          <div class="col-lg-8 text-center">
+            <p class="lead">Major life transitions often involve real estate decisions that carry financial, legal, and timing implications.</p>
+            <p class="text-muted">The Real Estate Strategy Consult is a paid, professional session designed to provide clarity around market context, pricing posture, and next-step options before decisions are made. This consultation is neutral, documented, and focused on understanding — not pressure.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- What It Is -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-4 mb-lg-0">
+    <!-- What It Is / Is Not Section -->
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h2>What the Strategy Consult Is</h2>
             <p>The Strategy Consult is a structured conversation focused on real estate considerations during divorce, separation, or other major life transitions.</p>
             <p>It is intended to help you understand:</p>
-            <ul class="focus-list">
-              <li>Market conditions and timing considerations</li>
-              <li>Equity considerations (high-level, not a valuation)</li>
-              <li>Sale-path options</li>
-              <li>Documentation that may be required</li>
-              <li>Practical next steps</li>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
+                <span>Market conditions and timing considerations</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
+                <span>Equity considerations (high-level, not a valuation)</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
+                <span>Sale-path options</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
+                <span>Documentation that may be required</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
+                <span>Practical next steps</span>
+              </li>
             </ul>
             <p class="text-muted mt-3"><strong>This consult is informational in nature and does not require a commitment to list.</strong></p>
           </div>
-          <div class="col-lg-5 offset-lg-1">
+          <div class="col-lg-5 offset-lg-1" data-aos="fade-up" data-aos-delay="300">
             <h2>What the Strategy Consult Is Not</h2>
             <p>The Strategy Consult is not:</p>
             <ul class="list-unstyled">
-              <li class="d-flex align-items-start mb-2">
-                <span class="text-muted me-2">—</span>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-x-circle text-muted me-3 mt-1"></i>
                 <span>A free discovery call</span>
               </li>
-              <li class="d-flex align-items-start mb-2">
-                <span class="text-muted me-2">—</span>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-x-circle text-muted me-3 mt-1"></i>
                 <span>A listing presentation</span>
               </li>
-              <li class="d-flex align-items-start mb-2">
-                <span class="text-muted me-2">—</span>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-x-circle text-muted me-3 mt-1"></i>
                 <span>Legal advice</span>
               </li>
-              <li class="d-flex align-items-start mb-2">
-                <span class="text-muted me-2">—</span>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-x-circle text-muted me-3 mt-1"></i>
                 <span>Financial planning</span>
               </li>
-              <li class="d-flex align-items-start mb-2">
-                <span class="text-muted me-2">—</span>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-x-circle text-muted me-3 mt-1"></i>
                 <span>Buyer or seller representation</span>
               </li>
-              <li class="d-flex align-items-start mb-2">
-                <span class="text-muted me-2">—</span>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-x-circle text-muted me-3 mt-1"></i>
                 <span>Emotional coaching</span>
               </li>
             </ul>
@@ -130,69 +152,92 @@
       </div>
     </section>
 
-    <!-- What Is Covered -->
-    <section class="bg-cream">
-      <div class="container">
+    <!-- What Is Covered Section -->
+    <section class="section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>What Is Covered</h2>
-            <p>Topics may include:</p>
-            <ul class="focus-list">
-              <li>Overview of the property and situational context</li>
-              <li>Market-supported pricing posture</li>
-              <li>Timing considerations and potential delay impact</li>
-              <li>Sale strategy options:
-                <ul class="mt-2 mb-0">
-                  <li>Selling now</li>
-                  <li>Delaying a sale</li>
-                  <li>Preparing prior to market</li>
-                  <li>Court-ordered or time-sensitive scenarios</li>
-                </ul>
+            <h2 class="text-center mb-4">What Is Covered</h2>
+            <p class="text-center mb-4">Topics may include:</p>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-arrow-right text-primary me-3 mt-1"></i>
+                <span>Overview of the property and situational context</span>
               </li>
-              <li>Documentation considerations for attorneys, mediation, or court use</li>
-              <li>Clear explanation of available paths forward</li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-arrow-right text-primary me-3 mt-1"></i>
+                <span>Market-supported pricing posture</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-arrow-right text-primary me-3 mt-1"></i>
+                <span>Timing considerations and potential delay impact</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-arrow-right text-primary me-3 mt-1"></i>
+                <div>
+                  <span>Sale strategy options:</span>
+                  <ul class="list-unstyled mt-2 ms-4">
+                    <li class="mb-1">— Selling now</li>
+                    <li class="mb-1">— Delaying a sale</li>
+                    <li class="mb-1">— Preparing prior to market</li>
+                    <li class="mb-1">— Court-ordered or time-sensitive scenarios</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-arrow-right text-primary me-3 mt-1"></i>
+                <span>Documentation considerations for attorneys, mediation, or court use</span>
+              </li>
+              <li class="d-flex align-items-start mb-3">
+                <i class="bi bi-arrow-right text-primary me-3 mt-1"></i>
+                <span>Clear explanation of available paths forward</span>
+              </li>
             </ul>
-            <p class="text-muted mt-3">All discussion is handled with neutrality and discretion.</p>
+            <p class="text-muted text-center mt-4">All discussion is handled with neutrality and discretion.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Pricing & Format -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 mb-4 mb-lg-0">
+    <!-- Pricing & Format Section -->
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
             <h2>Pricing</h2>
-            <p class="display-6 text-gold mb-3" style="font-family: var(--font-serif);">$150</p>
+            <p class="display-4 text-primary mb-3" style="font-family: 'Playfair Display', serif;">$150</p>
             <p>This is a paid professional consultation reflecting the time, analysis, and preparation involved.</p>
             <p class="text-muted"><strong>If you proceed with a listing, the Strategy Consult fee may be credited at closing.</strong></p>
           </div>
-          <div class="col-lg-5 offset-lg-2">
+          <div class="col-lg-5 offset-lg-2" data-aos="fade-up" data-aos-delay="300">
             <h2>Time & Format</h2>
-            <dl>
-              <dt>Duration</dt>
-              <dd class="text-muted mb-3">Approximately 60 minutes</dd>
-              <dt>Format</dt>
-              <dd class="text-muted mb-3">Virtual or in-person (as available)</dd>
-              <dt>Preparation</dt>
-              <dd class="text-muted">Light pre-session information may be requested to ensure a productive discussion</dd>
-            </dl>
+            <div class="mb-4">
+              <h5>Duration</h5>
+              <p class="text-muted">Approximately 60 minutes</p>
+            </div>
+            <div class="mb-4">
+              <h5>Format</h5>
+              <p class="text-muted">Virtual or in-person (as available)</p>
+            </div>
+            <div>
+              <h5>Preparation</h5>
+              <p class="text-muted">Light pre-session information may be requested to ensure a productive discussion</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Confidentiality & Disclaimers -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 mb-4 mb-lg-0">
+    <!-- Confidentiality & Disclaimers Section -->
+    <section class="section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
             <h2>Confidentiality</h2>
             <p>All Strategy Consults are handled confidentially.</p>
             <p class="text-muted">Information shared during the consult is used solely for the purpose of providing real estate context and guidance.</p>
           </div>
-          <div class="col-lg-5 offset-lg-2">
+          <div class="col-lg-5 offset-lg-2" data-aos="fade-up" data-aos-delay="300">
             <h2>Disclaimers</h2>
             <p class="text-muted">The Strategy Consult does not provide legal or financial advice.</p>
             <p class="text-muted">Market observations are based on available data and current conditions and do not guarantee outcomes.</p>
@@ -201,113 +246,110 @@
       </div>
     </section>
 
-    <!-- Request Form -->
-    <section>
-      <div class="container">
+    <!-- Request Form Section -->
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>Request a Strategy Consult</h2>
-            <p class="mb-4">Complete the form below to request a Strategy Consult. All inquiries are handled confidentially.</p>
+            <h2 class="text-center mb-2">Request a Strategy Consult</h2>
+            <p class="text-center text-muted mb-4">Complete the form below to request a Strategy Consult. All inquiries are handled confidentially.</p>
 
-            <form>
-              <fieldset class="mb-4">
-                <legend>Your Information</legend>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="consult-name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="consult-name" name="consult-name" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="consult-email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="consult-email" name="consult-email" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="consult-phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="consult-phone" name="consult-phone">
-                  </div>
-                </div>
-              </fieldset>
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <input type="hidden" name="form_type" value="strategy-consult">
 
-              <fieldset class="mb-4">
-                <legend>Property Information</legend>
-                <div class="row">
-                  <div class="col-12 mb-3">
-                    <label for="property-address" class="form-label">Property Address</label>
-                    <input type="text" class="form-control" id="property-address" name="property-address" placeholder="Street address, City, State, ZIP">
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="ownership-status" class="form-label">Ownership Status</label>
-                    <select class="form-select" id="ownership-status" name="ownership-status">
-                      <option value="">Select one</option>
-                      <option value="sole-owner">Sole Owner</option>
-                      <option value="joint-owner">Joint Owner</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="situation-type" class="form-label">Current Situation</label>
-                    <select class="form-select" id="situation-type" name="situation-type">
-                      <option value="">Select one</option>
-                      <option value="divorce">Divorce</option>
-                      <option value="separation">Separation</option>
-                      <option value="estate">Estate/Inheritance</option>
-                      <option value="relocation">Relocation</option>
-                      <option value="other">Other Life Transition</option>
-                    </select>
-                  </div>
+              <!-- Your Information -->
+              <h5 class="mb-3">Your Information</h5>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="name" placeholder="Name" required>
                 </div>
-              </fieldset>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control" name="phone" placeholder="Phone">
+                </div>
+              </div>
 
-              <fieldset class="mb-4">
-                <legend>Additional Details</legend>
-                <div class="row">
-                  <div class="col-12 mb-3">
-                    <label for="consult-message" class="form-label">Brief description of your situation (optional)</label>
-                    <textarea class="form-control" id="consult-message" name="consult-message" rows="4" placeholder="Share any context that would help prepare for the consultation..."></textarea>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="consult-timeline" class="form-label">Timeline</label>
-                    <select class="form-select" id="consult-timeline" name="consult-timeline">
-                      <option value="">Select one</option>
-                      <option value="urgent">Urgent (within 2 weeks)</option>
-                      <option value="soon">Soon (1-2 months)</option>
-                      <option value="planning">Planning ahead (3+ months)</option>
-                      <option value="unsure">Not sure yet</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="consult-format" class="form-label">Preferred Format</label>
-                    <select class="form-select" id="consult-format" name="consult-format">
-                      <option value="">Select one</option>
-                      <option value="virtual">Virtual (video call)</option>
-                      <option value="in-person">In-person</option>
-                      <option value="either">Either</option>
-                    </select>
-                  </div>
+              <!-- Property Information -->
+              <h5 class="mb-3">Property Information</h5>
+              <div class="row g-3 mb-4">
+                <div class="col-12">
+                  <input type="text" class="form-control" name="property_address" placeholder="Property Address (Street, City, State, ZIP)">
                 </div>
-              </fieldset>
+                <div class="col-md-6">
+                  <select class="form-select" name="ownership_status">
+                    <option value="">Ownership Status</option>
+                    <option value="sole-owner">Sole Owner</option>
+                    <option value="joint-owner">Joint Owner</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select" name="situation_type">
+                    <option value="">Current Situation</option>
+                    <option value="divorce">Divorce</option>
+                    <option value="separation">Separation</option>
+                    <option value="estate">Estate/Inheritance</option>
+                    <option value="relocation">Relocation</option>
+                    <option value="other">Other Life Transition</option>
+                  </select>
+                </div>
+              </div>
 
-              <fieldset class="mb-4">
-                <legend>Preferred Contact Method</legend>
-                <div class="d-flex gap-4">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="contact-preference" id="pref-email" value="email">
-                    <label class="form-check-label" for="pref-email">Email</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="contact-preference" id="pref-phone" value="phone">
-                    <label class="form-check-label" for="pref-phone">Phone</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="contact-preference" id="pref-either" value="either" checked>
-                    <label class="form-check-label" for="pref-either">Either</label>
-                  </div>
+              <!-- Additional Details -->
+              <h5 class="mb-3">Additional Details</h5>
+              <div class="row g-3 mb-4">
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Brief description of your situation (optional)"></textarea>
                 </div>
-              </fieldset>
+                <div class="col-md-6">
+                  <select class="form-select" name="timeline">
+                    <option value="">Timeline</option>
+                    <option value="urgent">Urgent (within 2 weeks)</option>
+                    <option value="soon">Soon (1-2 months)</option>
+                    <option value="planning">Planning ahead (3+ months)</option>
+                    <option value="unsure">Not sure yet</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select" name="format_preference">
+                    <option value="">Preferred Format</option>
+                    <option value="virtual">Virtual (video call)</option>
+                    <option value="in-person">In-person</option>
+                    <option value="either">Either</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Preferred Contact Method -->
+              <h5 class="mb-3">Preferred Contact Method</h5>
+              <div class="d-flex gap-4 mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="contact_preference" id="pref-email" value="email">
+                  <label class="form-check-label" for="pref-email">Email</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="contact_preference" id="pref-phone" value="phone">
+                  <label class="form-check-label" for="pref-phone">Phone</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="contact_preference" id="pref-either" value="either" checked>
+                  <label class="form-check-label" for="pref-either">Either</label>
+                </div>
+              </div>
 
               <p class="small text-muted mb-4">By submitting this form, you acknowledge that the Strategy Consult is a paid service ($150) and does not constitute legal or financial advice.</p>
 
-              <button type="submit" class="btn btn-primary">Request Strategy Consult</button>
+              <div class="col-12">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your request has been sent. Thank you!</div>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn-submit">Request Strategy Consult</button>
+              </div>
             </form>
           </div>
         </div>
@@ -316,51 +358,77 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <p class="footer-brand">MaryJ ATL</p>
-          <p class="small text-white-50">Real estate guidance for divorce, separation, and major life transitions.</p>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="about.html">About</a></li>
-              <li><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-              <li><a class="nav-link" href="services.html">Services</a></li>
-              <li><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-4">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="strategy-consult.html">Strategy Consult</a></li>
-              <li><a class="nav-link" href="get-prequalified.html">Get Prequalified</a></li>
-              <li><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-              <li><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="mt-4">
-            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" class="text-white-50 me-3" title="YouTube"><i class="bi bi-youtube fs-5"></i></a>
-            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" class="text-white-50" title="TikTok"><i class="bi bi-tiktok fs-5"></i></a>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MaryJ ATL</span>
+          </a>
+          <p>Real estate guidance for divorce, separation, and major life transitions.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
-      </div>
-      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
-        <div class="col-12">
-          <p class="small text-white-50 mb-0"><!-- License and brokerage information --></p>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="attorney-resources.html">Attorney Resources</a></li>
+            <li><a href="featured-properties.html">Properties</a></li>
+          </ul>
         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="request-cma.html">Request CMA</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="get-prequalified.html">Get Prequalified</a></li>
+            <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact</h4>
+          <p>Jameela Esa, REALTOR</p>
+          <p>License #400282</p>
+          <p>Keller Williams Realty Atlanta Partners</p>
+        </div>
+
       </div>
     </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Each office is independently owned and operated.</p>
+    </div>
+
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

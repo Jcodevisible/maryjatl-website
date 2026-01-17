@@ -1,225 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Services — MaryJ ATL</title>
+  <meta name="description" content="Real estate guidance structured around the realities of divorce, separation, and life transitions.">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/icons/favicon.svg" rel="icon">
+  <link href="assets/icons/favicon.svg" rel="apple-touch-icon">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Brand Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">MaryJ ATL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            <li class="nav-item"><a class="nav-link" href="request-cma.html">Request CMA</a></li>
-            <li class="nav-item"><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li class="nav-item"><a class="nav-link" href="strategy-consult.html">Strategy Consult</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">MaryJ ATL</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="attorney-resources.html">Attorney Resources</a></li>
+          <li><a href="featured-properties.html">Properties</a></li>
+          <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="request-cma.html">Request CMA</a></li>
+              <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+              <li><a href="get-prequalified.html">Get Prequalified</a></li>
+              <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
+  <main class="main">
 
-    <!-- Page Header -->
-    <section class="hero" style="min-height: auto; padding: 2rem 0;">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h1>Services</h1>
-            <p>Real estate guidance structured around the realities of divorce, separation, and life transitions.</p>
-          </div>
-          <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
-            <img src="assets/images/profile-image.png" alt="Jameela Esa, CDRES" class="img-fluid" style="border-radius: 4px;">
-          </div>
-        </div>
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Services</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Services</li>
+          </ol>
+        </nav>
       </div>
-    </section>
+    </div><!-- End Page Title -->
 
-    <!-- Divorce & Separation Home Sales -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12">
-            <h2>Divorce &amp; Separation Home Sales</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <article class="paired-block paired-block-attorney h-100">
-              <h3>For Attorneys &amp; Judges</h3>
-              <p>Structured listing process with documentation standards appropriate for court proceedings. Timeline coordination with legal milestones. Neutral communication protocols when representing both parties' interests in the sale.</p>
-              <a href="attorney-resources.html" class="btn btn-secondary">View Attorney Resources</a>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="paired-block paired-block-client h-100">
-              <h3>For Homeowners</h3>
-              <p>Guidance through the process of selling a shared property during separation. Clear explanation of market conditions, timing considerations, and what to expect at each stage.</p>
-              <a href="contact.html" class="btn btn-primary">Request a Strategy Consult</a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Services Section -->
+    <section id="services" class="services section">
 
-    <!-- Court-Ordered & Time-Sensitive Listings -->
-    <section>
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12">
-            <h2>Court-Ordered &amp; Time-Sensitive Listings</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <article class="paired-block paired-block-attorney h-100">
-              <h3>For Attorneys &amp; Judges</h3>
-              <p>Experience with court-ordered sales and deadline-driven transactions. Documentation of market exposure, pricing adjustments, and offer timelines for legal review.</p>
-              <a href="request-cma.html" class="btn btn-secondary">Request Market Documentation</a>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="paired-block paired-block-client h-100">
-              <h3>For Homeowners</h3>
-              <p>When court orders or deadlines require a sale, I help you understand the process, prepare the property appropriately, and navigate timing constraints.</p>
-              <a href="contact.html" class="btn btn-primary">Request a Strategy Consult</a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- Equity & Market Timing Analysis -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12">
-            <h2>Equity &amp; Market Timing Analysis</h2>
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <p class="lead">Real estate guidance structured around the realities of divorce, separation, and life transitions.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <article class="paired-block paired-block-attorney h-100">
-              <h3>For Attorneys &amp; Judges</h3>
-              <p>Comparative market analysis with supporting data for equity discussions. Market condition reports that contextualize current value within broader trends.</p>
-              <a href="request-cma.html" class="btn btn-secondary">Request Market Documentation</a>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="paired-block paired-block-client h-100">
-              <h3>For Homeowners</h3>
-              <p>Understanding your home's current market position and how timing may affect net proceeds. Data-supported analysis to inform decisions about when and whether to sell.</p>
-              <a href="request-cma.html" class="btn btn-primary">Request a Comparative Market Analysis</a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- High-Conflict / One-Party Cooperation -->
-    <section>
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12">
-            <h2>High-Conflict / One-Party Cooperation</h2>
+        <div class="row gy-5">
+
+          <!-- Service 1: Divorce & Separation Home Sales -->
+          <div class="col-xl-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="service-block">
+              <div class="service-content">
+                <div class="service-number">01</div>
+                <div class="service-info">
+                  <h4>Divorce &amp; Separation Home Sales</h4>
+                  <p class="mb-3"><strong>For Attorneys &amp; Judges:</strong> Structured listing process with documentation standards appropriate for court proceedings. Timeline coordination with legal milestones. Neutral communication protocols when representing both parties' interests in the sale.</p>
+                  <p><strong>For Homeowners:</strong> Guidance through the process of selling a shared property during separation. Clear explanation of market conditions, timing considerations, and what to expect at each stage.</p>
+                  <div class="d-flex gap-2 mt-3">
+                    <a href="attorney-resources.html" class="service-btn">Attorney Resources <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="service-image">
+                <img src="assets/img/real-estate/property-exterior-3.webp" alt="Divorce Home Sales" class="img-fluid">
+                <div class="image-overlay">
+                  <i class="bi bi-house-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Service Block -->
+
+          <!-- Service 2: Court-Ordered & Time-Sensitive Listings -->
+          <div class="col-xl-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="service-block">
+              <div class="service-content">
+                <div class="service-number">02</div>
+                <div class="service-info">
+                  <h4>Court-Ordered &amp; Time-Sensitive Listings</h4>
+                  <p class="mb-3"><strong>For Attorneys &amp; Judges:</strong> Experience with court-ordered sales and deadline-driven transactions. Documentation of market exposure, pricing adjustments, and offer timelines for legal review.</p>
+                  <p><strong>For Homeowners:</strong> When court orders or deadlines require a sale, I help you understand the process, prepare the property appropriately, and navigate timing constraints.</p>
+                  <div class="d-flex gap-2 mt-3">
+                    <a href="request-cma.html" class="service-btn">Request Market Documentation <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="service-image">
+                <img src="assets/img/real-estate/property-exterior-7.webp" alt="Court-Ordered Listings" class="img-fluid">
+                <div class="image-overlay">
+                  <i class="bi bi-calendar-check"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Service Block -->
+
+          <!-- Service 3: Equity & Market Timing Analysis -->
+          <div class="col-xl-6" data-aos="fade-right" data-aos-delay="400">
+            <div class="service-block">
+              <div class="service-content">
+                <div class="service-number">03</div>
+                <div class="service-info">
+                  <h4>Equity &amp; Market Timing Analysis</h4>
+                  <p class="mb-3"><strong>For Attorneys &amp; Judges:</strong> Comparative market analysis with supporting data for equity discussions. Market condition reports that contextualize current value within broader trends.</p>
+                  <p><strong>For Homeowners:</strong> Understanding your home's current market position and how timing may affect net proceeds. Data-supported analysis to inform decisions about when and whether to sell.</p>
+                  <div class="d-flex gap-2 mt-3">
+                    <a href="request-cma.html" class="service-btn">Request a CMA <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="service-image">
+                <img src="assets/img/real-estate/features-2.webp" alt="Equity Analysis" class="img-fluid">
+                <div class="image-overlay">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Service Block -->
+
+          <!-- Service 4: High-Conflict / One-Party Cooperation -->
+          <div class="col-xl-6" data-aos="fade-left" data-aos-delay="500">
+            <div class="service-block">
+              <div class="service-content">
+                <div class="service-number">04</div>
+                <div class="service-info">
+                  <h4>High-Conflict / One-Party Cooperation</h4>
+                  <p class="mb-3"><strong>For Attorneys &amp; Judges:</strong> Protocols for transactions where direct communication between parties is limited or inadvisable. Clear documentation trails and professional boundaries maintained throughout.</p>
+                  <p><strong>For Homeowners:</strong> When cooperation is difficult, I provide structured communication and clear processes that allow the sale to proceed professionally regardless of the relationship between parties.</p>
+                  <div class="d-flex gap-2 mt-3">
+                    <a href="contact.html" class="service-btn">Discuss Listing Strategy <i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="service-image">
+                <img src="assets/img/real-estate/property-interior-5.webp" alt="High-Conflict Listings" class="img-fluid">
+                <div class="image-overlay">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Service Block -->
+
+        </div>
+
+        <!-- CTA Section -->
+        <div class="row mt-5">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="600">
+            <div class="cta-section">
+              <div class="cta-content">
+                <h3>Ready to Discuss Your Situation?</h3>
+                <p>Schedule a strategy consult to discuss your real estate options during this transition.</p>
+                <div class="cta-buttons">
+                  <a href="strategy-consult.html" class="btn-primary">Request Strategy Consult</a>
+                  <a href="contact.html" class="btn-secondary">
+                    <i class="bi bi-envelope"></i> Contact Me
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 mb-4 mb-md-0">
-            <article class="paired-block paired-block-attorney h-100">
-              <h3>For Attorneys &amp; Judges</h3>
-              <p>Protocols for transactions where direct communication between parties is limited or inadvisable. Clear documentation trails and professional boundaries maintained throughout.</p>
-              <a href="contact.html" class="btn btn-secondary">Discuss Listing Strategy</a>
-            </article>
-          </div>
-          <div class="col-md-6">
-            <article class="paired-block paired-block-client h-100">
-              <h3>For Homeowners</h3>
-              <p>When cooperation is difficult, I provide structured communication and clear processes that allow the sale to proceed professionally regardless of the relationship between parties.</p>
-              <a href="contact.html" class="btn btn-primary">Request a Strategy Consult</a>
-            </article>
-          </div>
-        </div>
+
       </div>
-    </section>
+
+    </section><!-- /Services Section -->
 
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <p class="footer-brand">MaryJ ATL</p>
-          <p class="small text-white-50">Real estate guidance for divorce, separation, and major life transitions.</p>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="about.html">About</a></li>
-              <li><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-              <li><a class="nav-link" href="services.html">Services</a></li>
-              <li><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-4">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="get-prequalified.html">Get Prequalified</a></li>
-              <li><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-              <li><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="mt-4">
-            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" class="text-white-50 me-3" title="YouTube"><i class="bi bi-youtube fs-5"></i></a>
-            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" class="text-white-50" title="TikTok"><i class="bi bi-tiktok fs-5"></i></a>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MaryJ ATL</span>
+          </a>
+          <p>Real estate guidance for divorce, separation, and major life transitions.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
-      </div>
-      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
-        <div class="col-12">
-          <p class="small text-white-50 mb-0"><!-- License and brokerage information --></p>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="attorney-resources.html">Attorney Resources</a></li>
+            <li><a href="featured-properties.html">Properties</a></li>
+          </ul>
         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="request-cma.html">Request CMA</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="get-prequalified.html">Get Prequalified</a></li>
+            <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact</h4>
+          <p>Jameela Esa, REALTOR</p>
+          <p>License #400282</p>
+          <p>Keller Williams Realty Atlanta Partners</p>
+        </div>
+
       </div>
     </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Each office is independently owned and operated.</p>
+    </div>
+
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

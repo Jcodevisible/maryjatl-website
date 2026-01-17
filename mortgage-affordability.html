@@ -1,94 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Mortgage Affordability Calculator — MaryJ ATL</title>
+  <meta name="description" content="Understand your financing capacity as part of your transition planning.">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/icons/favicon.svg" rel="icon">
+  <link href="assets/icons/favicon.svg" rel="apple-touch-icon">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Brand Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">MaryJ ATL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            <li class="nav-item"><a class="nav-link" href="request-cma.html">Request CMA</a></li>
-            <li class="nav-item"><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li class="nav-item"><a class="nav-link" href="strategy-consult.html">Strategy Consult</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body class="mortgage-affordability-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">MaryJ ATL</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="attorney-resources.html">Attorney Resources</a></li>
+          <li><a href="featured-properties.html">Properties</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="request-cma.html">Request CMA</a></li>
+              <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+              <li><a href="get-prequalified.html">Get Prequalified</a></li>
+              <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
+  <main class="main">
 
-    <!-- Page Header -->
-    <section class="hero" style="min-height: auto; padding: 4rem 0;">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <h1>Mortgage Affordability Calculator</h1>
-            <p>Understand your financing capacity as part of your transition planning.</p>
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Mortgage Affordability Calculator</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Affordability Calculator</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Intro Section -->
+    <section class="section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p class="lead">Understand your financing capacity as part of your transition planning.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Context -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-4 mb-lg-0">
+    <!-- Context Section -->
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h2>How This Calculator Can Help</h2>
             <p>During a life transition, understanding what you can realistically afford is essential for making informed decisions. This calculator helps you evaluate your financial capacity based on income, debts, and other factors.</p>
             <p>Use this tool to explore scenarios related to your transition — whether you're considering retaining the family home, planning for post-sale housing, or evaluating refinancing options.</p>
           </div>
-          <div class="col-lg-5 offset-lg-1">
+          <div class="col-lg-5 offset-lg-1" data-aos="fade-up" data-aos-delay="300">
             <h3>Planning Scenarios</h3>
             <ul class="list-unstyled">
               <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3">—</span>
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
                 <span>Determining if an equity buyout is financially sustainable</span>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3">—</span>
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
                 <span>Understanding post-sale housing affordability</span>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3">—</span>
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
                 <span>Evaluating refinancing capacity after removing a party from the mortgage</span>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3">—</span>
+                <i class="bi bi-check-circle text-primary me-3 mt-1"></i>
                 <span>Providing documentation for negotiations or mediations</span>
               </li>
             </ul>
@@ -97,13 +118,13 @@
       </div>
     </section>
 
-    <!-- Calculator Embed -->
-    <section>
-      <div class="container">
+    <!-- Calculator Embed Section -->
+    <section class="section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <h2 class="text-center mb-4">Calculate Your Affordability</h2>
-            <div class="calculator-embed" style="background-color: #fff; border: 1px solid #e5e5e5; padding: 1rem;">
+            <div class="calculator-embed" style="background-color: #fff; border: 1px solid #e5e5e5; padding: 1rem; border-radius: 8px;">
               <iframe
                 src="https://www.mortgagecalculator.org/webmasters/?loanterm=30&interestrate=6.5&propertytax=3600&pmi=0.5&homeinsurance=1800&monthlyhoa=0"
                 style="width: 100%; height: 1300px; border: 0;"
@@ -116,29 +137,37 @@
       </div>
     </section>
 
-    <!-- Understanding Results -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Understanding Your Results</h2>
-            <p>The calculator provides estimates based on the information you enter. Key factors that affect affordability include:</p>
-            <div class="row mt-4">
-              <div class="col-md-6 mb-3">
-                <h4>Debt-to-Income Ratio</h4>
-                <p class="small text-muted">Lenders typically prefer your total monthly debts (including the new mortgage) to be no more than 43% of your gross monthly income.</p>
+    <!-- Understanding Results Section -->
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-center mb-4">Understanding Your Results</h2>
+            <p class="text-center mb-5">The calculator provides estimates based on the information you enter. Key factors that affect affordability include:</p>
+            <div class="row g-4">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="p-4 border rounded">
+                  <h4>Debt-to-Income Ratio</h4>
+                  <p class="text-muted mb-0">Lenders typically prefer your total monthly debts (including the new mortgage) to be no more than 43% of your gross monthly income.</p>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <h4>Down Payment</h4>
-                <p class="small text-muted">A larger down payment reduces your loan amount and monthly payments, and may eliminate private mortgage insurance requirements.</p>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div class="p-4 border rounded">
+                  <h4>Down Payment</h4>
+                  <p class="text-muted mb-0">A larger down payment reduces your loan amount and monthly payments, and may eliminate private mortgage insurance requirements.</p>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <h4>Interest Rate</h4>
-                <p class="small text-muted">Even small changes in interest rates can significantly impact your monthly payment and total loan cost over time.</p>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-4 border rounded">
+                  <h4>Interest Rate</h4>
+                  <p class="text-muted mb-0">Even small changes in interest rates can significantly impact your monthly payment and total loan cost over time.</p>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <h4>Additional Costs</h4>
-                <p class="small text-muted">Property taxes, insurance, and HOA fees add to your monthly housing costs beyond the mortgage payment itself.</p>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
+                <div class="p-4 border rounded">
+                  <h4>Additional Costs</h4>
+                  <p class="text-muted mb-0">Property taxes, insurance, and HOA fees add to your monthly housing costs beyond the mortgage payment itself.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -146,9 +175,9 @@
       </div>
     </section>
 
-    <!-- Disclaimer -->
-    <section>
-      <div class="container">
+    <!-- Disclaimer Section -->
+    <section class="section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <h2>Important Information</h2>
@@ -159,18 +188,18 @@
       </div>
     </section>
 
-    <!-- Related Tools -->
-    <section class="bg-cream">
-      <div class="container">
+    <!-- Related Tools Section -->
+    <section class="section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center text-center">
           <div class="col-lg-8">
             <h2>Related Planning Tools</h2>
             <p class="mb-4">Use these additional resources to support your transition planning.</p>
-            <div class="d-flex flex-wrap justify-content-center gap-2">
-              <a href="mortgage-calculator.html" class="btn btn-secondary">Monthly Payment Calculator</a>
-              <a href="get-prequalified.html" class="btn btn-secondary">Request Prequalification</a>
-              <a href="request-cma.html" class="btn btn-secondary">Request a CMA</a>
-              <a href="contact.html" class="btn btn-primary">Request a Strategy Consult</a>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="mortgage-calculator.html" class="btn btn-outline-primary">Monthly Payment Calculator</a>
+              <a href="get-prequalified.html" class="btn btn-outline-primary">Request Prequalification</a>
+              <a href="request-cma.html" class="btn btn-outline-primary">Request a CMA</a>
+              <a href="strategy-consult.html" class="btn-cta">Request a Strategy Consult</a>
             </div>
           </div>
         </div>
@@ -179,51 +208,78 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <p class="footer-brand">MaryJ ATL</p>
-          <p class="small text-white-50">Real estate guidance for divorce, separation, and major life transitions.</p>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-              <li><a class="nav-link" href="services.html">Services</a></li>
-              <li><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-              <li><a class="nav-link" href="request-cma.html">Request a CMA</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-4">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="get-prequalified.html">Get Prequalified</a></li>
-              <li><a class="nav-link" href="mortgage-calculator.html">Payment Calculator</a></li>
-              <li><a class="nav-link" href="mortgage-affordability.html">Affordability Calculator</a></li>
-              <li><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="mt-4">
-            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" class="text-white-50 me-3" title="YouTube"><i class="bi bi-youtube fs-5"></i></a>
-            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" class="text-white-50" title="TikTok"><i class="bi bi-tiktok fs-5"></i></a>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MaryJ ATL</span>
+          </a>
+          <p>Real estate guidance for divorce, separation, and major life transitions.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
-      </div>
-      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
-        <div class="col-12">
-          <p class="small text-white-50 mb-0">Calculator provided by <a href="https://www.mortgagecalculator.org/" target="_blank" rel="noopener" class="text-white-50">MortgageCalculator.org</a></p>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="attorney-resources.html">Attorney Resources</a></li>
+            <li><a href="featured-properties.html">Properties</a></li>
+          </ul>
         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="request-cma.html">Request CMA</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="get-prequalified.html">Get Prequalified</a></li>
+            <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact</h4>
+          <p>Jameela Esa, REALTOR</p>
+          <p>License #400282</p>
+          <p>Keller Williams Realty Atlanta Partners</p>
+        </div>
+
       </div>
     </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Calculator provided by <a href="https://www.mortgagecalculator.org/" target="_blank" rel="noopener">MortgageCalculator.org</a></p>
+      <p>Each office is independently owned and operated.</p>
+    </div>
+
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

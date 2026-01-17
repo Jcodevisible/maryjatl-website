@@ -1,266 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Request a CMA — MaryJ ATL</title>
+  <meta name="description" content="Request a Comparative Market Analysis - a data-supported assessment of your property's current market position.">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/icons/favicon.svg" rel="icon">
+  <link href="assets/icons/favicon.svg" rel="apple-touch-icon">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Brand Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">MaryJ ATL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            <li class="nav-item"><a class="nav-link active" href="request-cma.html">Request CMA</a></li>
-            <li class="nav-item"><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li class="nav-item"><a class="nav-link" href="strategy-consult.html">Strategy Consult</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body class="contact-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">MaryJ ATL</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="attorney-resources.html">Attorney Resources</a></li>
+          <li><a href="featured-properties.html">Properties</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="request-cma.html" class="active">Request CMA</a></li>
+              <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+              <li><a href="get-prequalified.html">Get Prequalified</a></li>
+              <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
+  <main class="main">
 
-    <!-- Page Header -->
-    <section class="hero" style="min-height: auto; padding: 2rem 0;">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h1>Request a Comparative Market Analysis</h1>
-            <p>A data-supported assessment of your property's current market position.</p>
-          </div>
-          <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
-            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80" alt="Home valuation and market analysis" class="img-fluid" style="border-radius: 4px;">
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Request a CMA</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Request CMA</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- CMA Section -->
+    <section class="section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <p class="lead">A Comparative Market Analysis provides a data-supported assessment of your property's current market position.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- What Is a CMA -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row">
+        <!-- What Is a CMA -->
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-6 mb-4 mb-lg-0">
-            <h2>What Is a Comparative Market Analysis</h2>
+            <h3>What Is a Comparative Market Analysis</h3>
             <p>A Comparative Market Analysis (CMA) evaluates your property against recent sales, current listings, and market conditions in your area. It provides a framework for understanding where your home sits in the current market.</p>
-            <p>A CMA is not an appraisal. It is a professional market assessment that can inform decisions about timing, pricing, and next steps.</p>
+            <p class="text-muted">A CMA is not an appraisal. It is a professional market assessment that can inform decisions about timing, pricing, and next steps.</p>
           </div>
           <div class="col-lg-5 offset-lg-1">
-            <h3>When a CMA Is Useful</h3>
+            <h4>When a CMA Is Useful</h4>
             <ul class="list-unstyled">
               <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3">—</span>
+                <i class="bi bi-check-circle me-3" style="color: var(--accent-color);"></i>
                 <span>During divorce or separation proceedings requiring property valuation context</span>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3">—</span>
+                <i class="bi bi-check-circle me-3" style="color: var(--accent-color);"></i>
                 <span>When court documentation of market value is needed</span>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3">—</span>
+                <i class="bi bi-check-circle me-3" style="color: var(--accent-color);"></i>
                 <span>Before making decisions about selling, refinancing, or buying out equity</span>
               </li>
               <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3">—</span>
+                <i class="bi bi-check-circle me-3" style="color: var(--accent-color);"></i>
                 <span>When attorneys or mediators request market data for negotiations</span>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- What You Will Receive -->
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2>What You Will Receive</h2>
-            <div class="row mt-4">
-              <div class="col-md-6 mb-3">
-                <p>Analysis of comparable properties (recent sales and active listings)</p>
+        <!-- What You Will Receive -->
+        <div class="features-showcase mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+            <div class="col-12 mb-3">
+              <h3 class="text-center">What You Will Receive</h3>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="feature-box" data-aos="flip-up" data-aos-delay="350">
+                <div class="feature-icon">
+                  <i class="bi bi-house-check"></i>
+                </div>
+                <div class="feature-content">
+                  <p>Analysis of comparable properties (recent sales and active listings)</p>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <p>Current market condition summary for your area</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="feature-box" data-aos="flip-up" data-aos-delay="400">
+                <div class="feature-icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <div class="feature-content">
+                  <p>Current market condition summary for your area</p>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <p>Estimated market value range based on available data</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="feature-box" data-aos="flip-up" data-aos-delay="450">
+                <div class="feature-icon">
+                  <i class="bi bi-currency-dollar"></i>
+                </div>
+                <div class="feature-content">
+                  <p>Estimated market value range based on available data</p>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <p>Documentation formatted for professional or legal use</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="feature-box" data-aos="flip-up" data-aos-delay="500">
+                <div class="feature-icon">
+                  <i class="bi bi-file-earmark-text"></i>
+                </div>
+                <div class="feature-content">
+                  <p>Documentation formatted for professional or legal use</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- CMA Request Form -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2 class="text-center mb-4">Request Your CMA</h2>
-            <form>
-              <fieldset class="mb-4">
-                <legend>Property Information</legend>
-                <div class="row">
-                  <div class="col-12 mb-3">
-                    <label for="property-address" class="form-label">Property Address</label>
-                    <input type="text" class="form-control" id="property-address" name="property-address" required>
+        <!-- CMA Request Form -->
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-10">
+            <div class="contact-form-wrapper">
+              <h2 class="text-center mb-4">Request Your CMA</h2>
+
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <input type="hidden" name="form_type" value="cma">
+                <div class="row g-3">
+
+                  <div class="col-12">
+                    <h5 class="mb-3">Property Information</h5>
                   </div>
-                  <div class="col-md-5 mb-3">
-                    <label for="property-city" class="form-label">City</label>
-                    <input type="text" class="form-control" id="property-city" name="property-city" required>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="property-address" placeholder="Property Address" required>
+                    </div>
                   </div>
-                  <div class="col-md-4 mb-3">
-                    <label for="property-state" class="form-label">State</label>
-                    <input type="text" class="form-control" id="property-state" name="property-state" value="Georgia" required>
+
+                  <div class="col-md-5">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="city" placeholder="City" required>
+                    </div>
                   </div>
-                  <div class="col-md-3 mb-3">
-                    <label for="property-zip" class="form-label">ZIP Code</label>
-                    <input type="text" class="form-control" id="property-zip" name="property-zip" required>
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="state" placeholder="State" value="Georgia" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="zip" placeholder="ZIP Code" required>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <h5 class="mb-3">Contact Information</h5>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="tel" class="form-control" name="phone" placeholder="Phone (optional)">
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <h5 class="mb-3">Request Context</h5>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select class="form-control" name="purpose">
+                        <option value="">Purpose of Request</option>
+                        <option value="divorce-separation">Divorce or separation proceedings</option>
+                        <option value="court-documentation">Court documentation</option>
+                        <option value="equity-buyout">Equity buyout consideration</option>
+                        <option value="sale-timing">Sale timing decision</option>
+                        <option value="attorney-request">Attorney or mediator request</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Additional Information" rows="4"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your request has been sent. Thank you!</div>
+                  </div>
+
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn-submit">Submit CMA Request</button>
                   </div>
                 </div>
-              </fieldset>
-
-              <fieldset class="mb-4">
-                <legend>Contact Information</legend>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="contact-name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="contact-name" name="contact-name" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="contact-email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="contact-email" name="contact-email" required>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="contact-phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="contact-phone" name="contact-phone">
-                  </div>
-                </div>
-              </fieldset>
-
-              <fieldset class="mb-4">
-                <legend>Request Context</legend>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="request-reason" class="form-label">Purpose of Request</label>
-                    <select class="form-select" id="request-reason" name="request-reason">
-                      <option value="">Select one</option>
-                      <option value="divorce-separation">Divorce or separation proceedings</option>
-                      <option value="court-documentation">Court documentation</option>
-                      <option value="equity-buyout">Equity buyout consideration</option>
-                      <option value="sale-timing">Sale timing decision</option>
-                      <option value="attorney-request">Attorney or mediator request</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                  <div class="col-12 mb-3">
-                    <label for="additional-info" class="form-label">Additional Information</label>
-                    <textarea class="form-control" id="additional-info" name="additional-info" rows="4"></textarea>
-                  </div>
-                </div>
-              </fieldset>
-
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">Submit CMA Request</button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Disclaimer -->
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
+        <!-- Disclaimer -->
+        <div class="row justify-content-center mt-5" data-aos="fade-up" data-aos-delay="500">
           <div class="col-lg-8">
-            <h2>Important Information</h2>
-            <p class="text-muted">A Comparative Market Analysis is a professional opinion of value based on available market data. It is not a formal appraisal and should not be used as a substitute for an appraisal when one is legally required.</p>
+            <div class="alert alert-light">
+              <h5>Important Information</h5>
+              <p class="mb-0 text-muted">A Comparative Market Analysis is a professional opinion of value based on available market data. It is not a formal appraisal and should not be used as a substitute for an appraisal when one is legally required.</p>
+            </div>
           </div>
         </div>
+
       </div>
+
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <p class="footer-brand">MaryJ ATL</p>
-          <p class="small text-white-50">Real estate guidance for divorce, separation, and major life transitions.</p>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="about.html">About</a></li>
-              <li><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-              <li><a class="nav-link" href="services.html">Services</a></li>
-              <li><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-4">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="get-prequalified.html">Get Prequalified</a></li>
-              <li><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-              <li><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="mt-4">
-            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" class="text-white-50 me-3" title="YouTube"><i class="bi bi-youtube fs-5"></i></a>
-            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" class="text-white-50" title="TikTok"><i class="bi bi-tiktok fs-5"></i></a>
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MaryJ ATL</span>
+          </a>
+          <p>Real estate guidance for divorce, separation, and major life transitions.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
-      </div>
-      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
-        <div class="col-12">
-          <p class="small text-white-50 mb-0"><!-- License and brokerage information --></p>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="attorney-resources.html">Attorney Resources</a></li>
+            <li><a href="featured-properties.html">Properties</a></li>
+          </ul>
         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="request-cma.html">Request CMA</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="get-prequalified.html">Get Prequalified</a></li>
+            <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact</h4>
+          <p>Jameela Esa, REALTOR</p>
+          <p>License #400282</p>
+          <p>Keller Williams Realty Atlanta Partners</p>
+        </div>
+
       </div>
     </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Each office is independently owned and operated.</p>
+    </div>
+
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
