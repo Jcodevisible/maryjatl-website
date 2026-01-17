@@ -22,6 +22,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -290,8 +291,8 @@
           </div>
           <div class="col-lg-6">
             <div class="cta-image" data-aos="zoom-in" data-aos-delay="200">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/S6yrIuCTxgw?si=4uH9RHhPibVucUBl" title="UNCoupled Podcast" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <div class="plyr__video-embed" id="player">
+                <iframe src="https://www.youtube.com/embed/S6yrIuCTxgw?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1" allowfullscreen allow="autoplay"></iframe>
               </div>
             </div>
           </div>
@@ -477,6 +478,14 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Plyr Video Player -->
+  <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+  <script>
+    const player = new Plyr('#player', {
+      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen']
+    });
+  </script>
 
 </body>
 
