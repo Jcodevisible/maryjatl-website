@@ -24,7 +24,8 @@
   --background-color: #ffffff; /* White - Primary background */
   --default-color: #2D2D2D; /* Text color for body content */
   --heading-color: #1A1A1A; /* Black - Headings and titles */
-  --accent-color: #C9A227; /* Gold - Brand accent for buttons, links, CTAs */
+  --accent-color: #C9A227; /* Gold - Brand accent for buttons, large elements */
+  --link-color: #1A1A1A; /* Black - Accessible text links */
   --surface-color: #ffffff; /* White - Cards and boxed elements */
   --contrast-color: #ffffff; /* White - Text on accent backgrounds */
 }
@@ -44,6 +45,7 @@
 .light-background {
   --background-color: #F8F5F0; /* Cream - Contrast sections */
   --surface-color: #ffffff;
+  --link-color: #1A1A1A; /* Black for accessibility */
 }
 
 .dark-background {
@@ -52,6 +54,7 @@
   --heading-color: #ffffff;
   --surface-color: #2D2D2D;
   --contrast-color: #ffffff;
+  --link-color: #C9A227; /* Original gold works well on dark backgrounds */
 }
 
 .accent-background {
@@ -59,6 +62,7 @@
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff; /* White accent on gold background */
+  --link-color: #ffffff; /* White links on gold background */
   --surface-color: #b89223;
   --contrast-color: #ffffff;
 }
@@ -78,14 +82,32 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--link-color);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--link-color), transparent 25%);
   text-decoration: none;
+}
+
+/* Global Button Styles - Black background with white text */
+.btn-cta,
+.btn-submit,
+.btn.btn-primary {
+  background: #1A1A1A !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  border-color: #1A1A1A !important;
+}
+
+.btn-cta:hover,
+.btn-submit:hover,
+.btn.btn-primary:hover {
+  background: #2D2D2D !important;
+  color: #ffffff !important;
+  border-color: #2D2D2D !important;
 }
 
 h1,
