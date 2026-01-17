@@ -3,7 +3,9 @@
     "allow": [
       "Bash(start \"\" \"C:\\\\Users\\\\jamee\\\\Documents\\\\RealEstate-MaryJATL\\\\Website\\\\index.html\")",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate navigation, profile photo, and styling\n\n- Add black tab styling to navigation bar\n- Add Request CMA and Mortgage Calculator to nav\n- Update hero profile photo to new photoshoot image\n- Reduce contact page header margins\n- Add documentation files \\(CHANGELOG, TODO, REVIEWS-RESEARCH\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate navigation, profile photo, and styling\n\n- Add black tab styling to navigation bar\n- Add Request CMA and Mortgage Calculator to nav\n- Update hero profile photo to new photoshoot image\n- Reduce contact page header margins\n- Add documentation files \\(CHANGELOG, TODO, REVIEWS-RESEARCH\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

@@ -1,5 +1,24 @@
 # MaryJ ATL Website Changelog
 
+## 2026-01-17 — Strategy Consult Page & Hero Updates
+
+### New Page
+- **strategy-consult.html** — Paid professional consultation page ($350)
+  - What the consult is / is not
+  - Topics covered
+  - Pricing and format details
+  - Confidentiality and disclaimers
+  - Contact form for requesting consultation
+
+### Navigation Updates
+- Added "Strategy Consult" link to navigation on all pages
+
+### Layout Adjustments
+- Reduced hero banner padding from 6rem to 3rem
+- Removed min-height constraint on hero sections
+
+---
+
 ## 2026-01-17 — Navigation & Profile Updates
 
 ### Navigation Styling
