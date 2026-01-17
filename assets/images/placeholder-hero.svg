@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <rect fill="#F4EDE1" width="1200" height="600"/>
+  <rect fill="#E2B322" opacity="0.3" x="0" y="0" width="1200" height="600"/>
+  <g fill="none" stroke="#E2B322" stroke-width="2" opacity="0.5">
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+  </g>
+  <rect fill="#FFFFFF" opacity="0.8" x="400" y="200" width="400" height="200" rx="4"/>
+  <text x="600" y="290" font-family="Georgia, serif" font-size="24" fill="#1a1a1a" text-anchor="middle">Hero Image</text>
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="14" fill="#555555" text-anchor="middle">2400 × 1350</text>
+</svg>

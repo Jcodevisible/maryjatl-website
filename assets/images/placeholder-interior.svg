@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect fill="#F4EDE1" width="600" height="400"/>
+  <!-- Room outline -->
+  <g fill="none" stroke="#E2B322" stroke-width="2">
+    <!-- Floor -->
+    <line x1="50" y1="300" x2="550" y2="300"/>
+    <!-- Back wall -->
+    <line x1="100" y1="100" x2="500" y2="100"/>
+    <!-- Left wall -->
+    <line x1="50" y1="300" x2="100" y2="100"/>
+    <!-- Right wall -->
+    <line x1="550" y1="300" x2="500" y2="100"/>
+    <!-- Window -->
+    <rect x="200" y="130" width="200" height="120"/>
+    <line x1="300" y1="130" x2="300" y2="250"/>
+    <line x1="200" y1="190" x2="400" y2="190"/>
+  </g>
+  <text x="300" y="350" font-family="Georgia, serif" font-size="16" fill="#1a1a1a" text-anchor="middle">Interior Photo</text>
+  <text x="300" y="375" font-family="Arial, sans-serif" font-size="12" fill="#555555" text-anchor="middle">600 × 400</text>
+</svg>
