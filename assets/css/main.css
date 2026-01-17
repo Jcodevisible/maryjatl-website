@@ -113,7 +113,6 @@ main.main .copyright a:hover {
 }
 
 /* Global Button Styles - Black background with white text */
-.btn-cta,
 .btn-submit,
 .btn.btn-primary {
   background: #1A1A1A !important;
@@ -122,12 +121,24 @@ main.main .copyright a:hover {
   border-color: #1A1A1A !important;
 }
 
-.btn-cta:hover,
 .btn-submit:hover,
 .btn.btn-primary:hover {
   background: #2D2D2D !important;
   color: #ffffff !important;
   border-color: #2D2D2D !important;
+}
+
+/* CTA links styled with dark gold text */
+.btn-cta {
+  background: transparent !important;
+  color: #7A6316 !important;
+  font-weight: 600 !important;
+  border: none !important;
+}
+
+.btn-cta:hover {
+  background: transparent !important;
+  color: #5C4A10 !important;
 }
 
 h1,
