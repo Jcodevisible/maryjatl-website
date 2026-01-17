@@ -32,7 +32,7 @@
 
 /* Nav Menu Colors */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.9);  /* Nav links on gold header */
+  --nav-color: #ffffff;  /* White nav links for accessibility */
   --nav-hover-color: #1A1A1A; /* Black on hover */
   --nav-mobile-background-color: #C9A227; /* Gold mobile menu background */
   --nav-dropdown-background-color: #ffffff; /* Dropdown background */
