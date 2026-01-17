@@ -1,5 +1,27 @@
 # MaryJ ATL Website Changelog
 
+## 2026-01-17 — Navigation & Profile Updates
+
+### Navigation Styling
+- Added black background tab styling to navigation links
+- Tabs highlight black with white text on hover/active state
+- Rounded corners (4px) for tab appearance
+
+### Navigation Links Added
+- Added "Request CMA" to main navigation across all pages
+- Added "Mortgage Calculator" to main navigation across all pages
+
+### Profile Photo Update
+- Updated homepage hero profile photo to new photoshoot image (profile-image.png)
+
+### Layout Adjustments
+- Reduced contact page header padding from 4rem to 2rem
+
+### Pages Updated
+- All 10 HTML pages updated with new navigation
+
+---
+
 ## 2026-01-17 — Premium Real Estate Bootstrap Theme
 
 ### Theme Overhaul
