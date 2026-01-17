@@ -1,275 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>MaryJ ATL — Real Estate Guidance for Life Transitions</title>
+  <meta name="description" content="Real estate guidance for divorce, separation, and major life changes — grounded in data, timing, and clear next steps.">
+  <meta name="keywords" content="divorce real estate, life transition, Atlanta realtor, CDRES, home sale divorce">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/icons/favicon.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Brand Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="/">MaryJ ATL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            <li class="nav-item"><a class="nav-link" href="request-cma.html">Request CMA</a></li>
-            <li class="nav-item"><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-            <li class="nav-item"><a class="nav-link" href="strategy-consult.html">Strategy Consult</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">MaryJ ATL</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="attorney-resources.html">Attorney Resources</a></li>
+          <li><a href="featured-properties.html">Properties</a></li>
+          <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="request-cma.html">Request CMA</a></li>
+              <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+              <li><a href="get-prequalified.html">Get Prequalified</a></li>
+              <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
+  <main class="main">
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h1>You're Navigating a Life Transition.<br>I'll Help You Move Forward—Strategically.</h1>
-            <p>Real estate guidance for divorce, separation, and major life changes — grounded in data, timing, and clear next steps.</p>
-            <a href="contact.html" class="btn btn-primary">Request a Strategy Consult</a>
-          </div>
-          <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
-            <img src="assets/images/profile-image.png" alt="Jameela Esa, Certified Divorce Real Estate Specialist" class="img-fluid" style="border-radius: 4px;">
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="hero" class="hero section">
 
-    <!-- Areas of Focus -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>Areas of Focus</h2>
-          </div>
-          <div class="col-lg-6">
-            <ul class="focus-list">
-              <li>Divorce &amp; Separation Home Sales</li>
-              <li>Court-Ordered &amp; Time-Sensitive Listings</li>
-              <li>Equity &amp; Market Timing Analysis</li>
-              <li>High-Conflict or One-Party Cooperation Scenarios</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- Evidence-Based Guidance -->
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2>Personalized, Evidence-Based Guidance</h2>
-            <p class="mx-auto" style="max-width: 60ch;">Every transition is different. Before decisions are made, I help you understand the numbers, the market conditions, and the long-term impact of timing — so you can move forward with clarity.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="hero-wrapper">
+          <div class="row g-4">
 
-    <!-- Professional Guidance -->
-    <section class="bg-cream">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 mb-4 mb-lg-0">
-            <h2>Professional Real Estate Guidance for Life Transitions</h2>
-          </div>
-          <div class="col-lg-6 offset-lg-1">
-            <ul class="list-unstyled">
-              <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3" style="font-size: 1.25rem;">—</span>
-                <span>Neutral representation in emotionally complex situations</span>
-              </li>
-              <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3" style="font-size: 1.25rem;">—</span>
-                <span>Market-supported pricing strategy</span>
-              </li>
-              <li class="d-flex align-items-start mb-3">
-                <span class="gold-accent me-3" style="font-size: 1.25rem;">—</span>
-                <span>Clear documentation for attorneys &amp; decision-makers</span>
-              </li>
-            </ul>
+            <div class="col-lg-7">
+              <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
+                <div class="content-header">
+                  <span class="hero-label">
+                    <i class="bi bi-house-heart"></i>
+                    Divorce Real Estate Specialist
+                  </span>
+                  <h1>You're Navigating a Life Transition.<br>I'll Help You Move Forward—Strategically.</h1>
+                  <p>Real estate guidance for divorce, separation, and major life changes — grounded in data, timing, and clear next steps.</p>
+                </div>
+
+                <div class="action-section mt-4">
+                  <a href="strategy-consult.html" class="btn-cta">
+                    <span>Request a Strategy Consult</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+
+                <div class="achievement-grid" data-aos="fade-up" data-aos-delay="400">
+                  <div class="achievement-item">
+                    <div class="achievement-number">
+                      <span>CDRES</span>
+                    </div>
+                    <span class="achievement-text">Certified Divorce Real Estate Specialist</span>
+                  </div>
+                  <div class="achievement-item">
+                    <div class="achievement-number">
+                      <span>5+</span>
+                    </div>
+                    <span class="achievement-text">Years Licensed</span>
+                  </div>
+                  <div class="achievement-item">
+                    <div class="achievement-number">
+                      <span>100%</span>
+                    </div>
+                    <span class="achievement-text">Confidential</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Hero Content -->
+
+            <div class="col-lg-5">
+              <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                <div class="visual-container">
+                  <div class="featured-property">
+                    <img src="assets/images/profile-image.png" alt="Jameela Esa, Certified Divorce Real Estate Specialist" class="img-fluid">
+                    <div class="property-info">
+                      <div class="property-price">Jameela Esa</div>
+                      <div class="property-details">
+                        <span><i class="bi bi-geo-alt"></i> Atlanta, Georgia</span>
+                        <span><i class="bi bi-award"></i> CDRES Certified</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Hero Visual -->
+
           </div>
         </div>
+
       </div>
-    </section>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Areas of Focus Section -->
+    <section id="areas-focus" class="home-about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="image-gallery">
+              <div class="primary-image">
+                <img src="assets/img/real-estate/property-exterior-1.webp" alt="Professional Real Estate Guidance" class="img-fluid">
+                <div class="experience-badge">
+                  <div class="badge-content">
+                    <div class="number"><span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>+</div>
+                    <div class="text">Years<br>Licensed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="content">
+              <div class="section-header">
+                <span class="section-label">Areas of Focus</span>
+                <h2>Professional Real Estate Guidance for Life Transitions</h2>
+              </div>
+
+              <div class="achievements-list">
+                <div class="achievement-item">
+                  <div class="achievement-icon">
+                    <i class="bi bi-house-door"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>Divorce & Separation Home Sales</h4>
+                    <p>Structured listing process with neutrality and discretion</p>
+                  </div>
+                </div>
+                <div class="achievement-item">
+                  <div class="achievement-icon">
+                    <i class="bi bi-calendar-check"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>Court-Ordered & Time-Sensitive Listings</h4>
+                    <p>Timeline coordination with legal deadlines</p>
+                  </div>
+                </div>
+                <div class="achievement-item">
+                  <div class="achievement-icon">
+                    <i class="bi bi-graph-up"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>Equity & Market Timing Analysis</h4>
+                    <p>Data-supported pricing and market context</p>
+                  </div>
+                </div>
+                <div class="achievement-item">
+                  <div class="achievement-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>High-Conflict / One-Party Cooperation</h4>
+                    <p>Professional protocols when direct communication is limited</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="action-section">
+                <a href="services.html" class="btn-cta">
+                  <span>View All Services</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Areas of Focus Section -->
+
+    <!-- Evidence-Based Guidance Section -->
+    <section id="evidence-guidance" class="services section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="section-label">Personalized, Evidence-Based Guidance</span>
+        <h2>Move Forward with Clarity</h2>
+        <p>Every transition is different. Before decisions are made, I help you understand the numbers, the market conditions, and the long-term impact of timing — so you can move forward with clarity.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="icon">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <h3>Neutral Representation</h3>
+              <p>Professional guidance in emotionally complex situations, maintaining objectivity throughout the process.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="icon">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
+              <h3>Market-Supported Pricing</h3>
+              <p>Data-driven pricing strategy based on current market conditions and comparable sales analysis.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="icon">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Clear Documentation</h3>
+              <p>Professional documentation formatted for attorneys, mediators, and court proceedings.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Evidence-Based Guidance Section -->
 
     <!-- UNCoupled Section -->
-    <section class="uncoupled-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <h2>UNCoupled</h2>
-            <p class="lead">Divorce doesn't start with paperwork.<br>It starts with uncertainty.</p>
-            <p class="text-muted">A podcast exploring clarity, decision-making, and professional perspective during major life transitions.</p>
-            <div class="mt-4">
-              <a href="https://www.uncoupledonline.com" class="btn btn-secondary me-2 mb-2" target="_blank" rel="noopener">Visit UNCoupled</a>
-              <a href="https://www.youtube.com/@maryj-uncoupled" class="btn btn-secondary mb-2" target="_blank" rel="noopener">Watch on YouTube</a>
+    <section id="uncoupled" class="call-to-action section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="cta-content">
+              <span class="section-label">UNCoupled Podcast</span>
+              <h2>Divorce doesn't start with paperwork.<br>It starts with uncertainty.</h2>
+              <p>A podcast exploring clarity, decision-making, and professional perspective during major life transitions.</p>
+              <div class="cta-buttons">
+                <a href="https://www.uncoupledonline.com" class="btn-cta" target="_blank" rel="noopener">
+                  <span>Visit UNCoupled</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="https://www.youtube.com/@maryj-uncoupled" class="btn-secondary" target="_blank" rel="noopener">
+                  <i class="bi bi-youtube"></i>
+                  <span>Watch on YouTube</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5 offset-lg-1">
-            <!-- Client Perspective Video -->
-            <div class="ratio ratio-16x9" style="position: relative;">
-              <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&q=80" alt="UNCoupled Podcast" style="width: 100%; height: 100%; object-fit: cover;">
-              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: rgba(0,0,0,0.7); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-              </div>
+          <div class="col-lg-6">
+            <div class="cta-image" data-aos="zoom-in" data-aos-delay="200">
+              <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&q=80" alt="UNCoupled Podcast" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Featured Properties -->
-    <section>
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12">
-            <h2>Featured Properties</h2>
-          </div>
-        </div>
-        <div class="row stagger-children">
-          <!-- Property 1 - Real Sale -->
-          <div class="col-md-6 col-lg-4">
-            <article class="property-card">
-              <div class="property-card-image">
-                <img src="https://photos.prod.cirrussystem.net/903/5d4b29b55cebea5ce9733f72e2041a4f/437394518.jpeg" alt="3160 Drayton Manor Run, Lawrenceville">
-              </div>
-              <div class="property-card-body">
-                <span class="property-tag">Life Transition Sale</span>
-                <span class="property-status">Sold — $427,000</span>
-                <h3>3160 Drayton Manor Run</h3>
-                <p class="text-muted small mb-0">Sugarloaf Manor, Lawrenceville</p>
-              </div>
-            </article>
-          </div>
-          <!-- Property 2 - Real Sale -->
-          <div class="col-md-6 col-lg-4">
-            <article class="property-card">
-              <div class="property-card-image">
-                <img src="https://photos.zillowstatic.com/fp/e01b4ff28e90433c8fa568060b75881c-cc_ft_960.webp" alt="3528 Woodshade Dr, Loganville">
-              </div>
-              <div class="property-card-body">
-                <span class="property-tag">Life Transition Sale</span>
-                <span class="property-status">Sold — $325,000</span>
-                <h3>3528 Woodshade Dr</h3>
-                <p class="text-muted small mb-0">Loganville, GA</p>
-              </div>
-            </article>
-          </div>
-          <!-- Property 3 - Real Sale -->
-          <div class="col-md-6 col-lg-4">
-            <article class="property-card">
-              <div class="property-card-image">
-                <img src="https://maps.googleapis.com/maps/api/streetview?location=51B+Coffee+Ln%2C+Ellenwood%2C+GA+30294&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=quTz4taQpveIcsaI9evM32w7yvk=" alt="51B Coffee Ln, Ellenwood">
-              </div>
-              <div class="property-card-body">
-                <span class="property-tag">Life Transition Sale</span>
-                <span class="property-status">Sold</span>
-                <h3>51B Coffee Ln</h3>
-                <p class="text-muted small mb-0">Ellenwood, GA</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-12">
-            <a href="featured-properties.html" class="btn btn-secondary">View All Properties</a>
-          </div>
-        </div>
+    </section><!-- /UNCoupled Section -->
+
+    <!-- Featured Properties Section -->
+    <section id="featured-properties" class="featured-properties section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="section-label">Life Transition Sales</span>
+        <h2>Featured Properties</h2>
+        <p>Properties represented during life transitions, including divorce, separation, and estate matters.</p>
       </div>
-    </section>
 
-    <!-- Final CTA -->
-    <section>
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <!-- Property 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="property-card">
+              <div class="property-image">
+                <img src="https://photos.prod.cirrussystem.net/903/5d4b29b55cebea5ce9733f72e2041a4f/437394518.jpeg" alt="3160 Drayton Manor Run, Lawrenceville" class="img-fluid">
+                <div class="property-badge">Life Transition Sale</div>
+                <div class="property-status">Sold — $427,000</div>
+              </div>
+              <div class="property-content">
+                <h3 class="property-title">3160 Drayton Manor Run</h3>
+                <p class="property-location"><i class="bi bi-geo-alt"></i> Sugarloaf Manor, Lawrenceville</p>
+                <div class="property-features">
+                  <span><i class="bi bi-door-open"></i> 3 Bed</span>
+                  <span><i class="bi bi-droplet"></i> 2.5 Bath</span>
+                  <span><i class="bi bi-arrows-fullscreen"></i> 2,955 sqft</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="property-card">
+              <div class="property-image">
+                <img src="https://photos.zillowstatic.com/fp/e01b4ff28e90433c8fa568060b75881c-cc_ft_960.webp" alt="3528 Woodshade Dr, Loganville" class="img-fluid">
+                <div class="property-badge">Life Transition Sale</div>
+                <div class="property-status">Sold — $325,000</div>
+              </div>
+              <div class="property-content">
+                <h3 class="property-title">3528 Woodshade Dr</h3>
+                <p class="property-location"><i class="bi bi-geo-alt"></i> Loganville, GA</p>
+                <div class="property-features">
+                  <span><i class="bi bi-door-open"></i> 4 Bed</span>
+                  <span><i class="bi bi-droplet"></i> 2 Bath</span>
+                  <span><i class="bi bi-arrows-fullscreen"></i> 3,804 sqft</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="property-card">
+              <div class="property-image">
+                <img src="https://maps.googleapis.com/maps/api/streetview?location=51B+Coffee+Ln%2C+Ellenwood%2C+GA+30294&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=quTz4taQpveIcsaI9evM32w7yvk=" alt="51B Coffee Ln, Ellenwood" class="img-fluid">
+                <div class="property-badge">Life Transition Sale</div>
+                <div class="property-status">Sold</div>
+              </div>
+              <div class="property-content">
+                <h3 class="property-title">51B Coffee Ln</h3>
+                <p class="property-location"><i class="bi bi-geo-alt"></i> Ellenwood, GA</p>
+                <div class="property-features">
+                  <span><i class="bi bi-door-open"></i> 5 Bed</span>
+                  <span><i class="bi bi-droplet"></i> 4 Bath</span>
+                  <span><i class="bi bi-arrows-fullscreen"></i> 3,084 sqft</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="featured-properties.html" class="btn-cta">
+            <span>View All Properties</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Properties Section -->
+
+    <!-- Final CTA Section -->
+    <section id="final-cta" class="call-to-action section accent-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center text-center">
           <div class="col-lg-8">
             <h2>You don't have to navigate this alone.</h2>
             <p class="mb-4">Start with clarity.</p>
-            <a href="contact.html" class="btn btn-primary">Request a Strategy Consult</a>
+            <a href="strategy-consult.html" class="btn-cta btn-light">
+              <span>Request a Strategy Consult</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+
+    </section><!-- /Final CTA Section -->
 
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <p class="footer-brand">MaryJ ATL</p>
-          <p class="small text-white-50">Real estate guidance for divorce, separation, and major life transitions.</p>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="about.html">About</a></li>
-              <li><a class="nav-link" href="attorney-resources.html">Attorney Resources</a></li>
-              <li><a class="nav-link" href="services.html">Services</a></li>
-              <li><a class="nav-link" href="featured-properties.html">Featured Properties</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-lg-4">
-          <nav>
-            <ul class="nav flex-column">
-              <li><a class="nav-link" href="get-prequalified.html">Get Prequalified</a></li>
-              <li><a class="nav-link" href="mortgage-calculator.html">Mortgage Calculator</a></li>
-              <li><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="mt-4">
-            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" class="text-white-50 me-3" title="YouTube"><i class="bi bi-youtube fs-5"></i></a>
-            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" class="text-white-50 me-3" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" class="text-white-50" title="TikTok"><i class="bi bi-tiktok fs-5"></i></a>
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">MaryJ ATL</span>
+          </a>
+          <p>Real estate guidance for divorce, separation, and major life transitions.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
-      </div>
-      <div class="row mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
-        <div class="col-12">
-          <p class="small text-white-50 mb-0"><!-- License and brokerage information --></p>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="attorney-resources.html">Attorney Resources</a></li>
+            <li><a href="featured-properties.html">Properties</a></li>
+          </ul>
         </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="request-cma.html">Request CMA</a></li>
+            <li><a href="mortgage-calculator.html">Mortgage Calculator</a></li>
+            <li><a href="get-prequalified.html">Get Prequalified</a></li>
+            <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact</h4>
+          <p>Keller Williams Realty</p>
+          <p>Atlanta Partners</p>
+          <p>Georgia</p>
+        </div>
+
       </div>
     </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Jameela Esa | REALTOR | License #400282 | Keller Williams Realty Atlanta Partners</p>
+    </div>
+
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
