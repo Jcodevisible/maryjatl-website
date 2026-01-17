@@ -1,0 +1,120 @@
+# MaryJ ATL Website Changelog
+
+## 2026-01-17 — Premium Real Estate Bootstrap Theme
+
+### Theme Overhaul
+- Applied premium real estate Bootstrap theme with gold/cream/black palette
+- New gold primary button style (#C9A227)
+- Enhanced shadows (sm, md, lg, xl) for depth
+- Smooth cubic-bezier transitions throughout
+- Hero section with decorative gradient background
+- Property cards with dramatic hover lift (8px) and image zoom
+- Gold underline animation on navigation links
+- Form inputs with gold focus states
+- CTA sections with dark gradient and subtle pattern overlay
+- Footer with gold section headings
+- Stats section styling for metrics display
+- Feature cards with gold top-border reveal on hover
+- Testimonial card styling with decorative quote
+- Section subtitle utility class (gold uppercase text)
+- Accent line decorators
+
+---
+
+## 2026-01-17 — Bootstrap Template Enhancement
+
+### CSS Enhancements
+- Added shadow system (sm, md, lg) for depth
+- Added smooth transitions and hover animations
+- Property cards now have lift effect on hover with image zoom
+- Buttons transform on hover with shadow
+- Navigation links have animated underline on hover/active
+- Added stagger animation for property card grid
+- Improved mobile navigation with dropdown shadow
+- Enhanced form focus states with gold accent
+- Added `.accent-line` utility for gold line accents
+
+### Property Updates
+- Added 51B Coffee Ln, Ellenwood, GA (5 bed, 4 bath, 3,084 sqft)
+- Using Google Street View image for 51B Coffee Ln
+- Removed all placeholder properties — now showing only real sales
+
+---
+
+## 2026-01-17 — Session Updates
+
+### New Pages
+- **about.html** — Full bio page for Jameela Esa with background, approach, credentials, and professional network sections
+
+### Images & Media
+- Added real property photos from Unsplash for featured properties
+- Added actual listing photo for 3160 Drayton Manor Run from MLS
+- Added profile photos (maryj-professional.jpg, maryj-studio.png) to page headers
+- Added podcast thumbnail with play button overlay for UNCoupled section
+
+### Real Property Data Added
+- **3160 Drayton Manor Run, Lawrenceville, GA 30046**
+  - Sold: Feb 24, 2025 for $427,000
+  - 3 bed, 2.5 bath, 2,955 sqft
+  - Built 2003, 0.18 acres
+  - Sugarloaf Manor neighborhood
+  - Zillow: https://www.zillow.com/homedetails/3160-Drayton-Manor-Run-Lawrenceville-GA-30046/80154750_zpid/
+
+- **3528 Woodshade Dr, Loganville, GA 30052**
+  - Sold for $325,000
+  - 4 bed, 2 bath, 3,804 sqft
+  - Built 2016
+  - Photo: https://photos.zillowstatic.com/fp/e01b4ff28e90433c8fa568060b75881c-cc_ft_960.webp
+  - Zillow: https://www.zillow.com/homedetails/3528-Woodshade-Dr-Loganville-GA-30052/98001882_zpid/
+
+- **51B Coffee Ln, Ellenwood, GA 30294**
+  - Sold (price not displayed)
+  - 5 bed, 4 bath, 3,084 sqft
+  - Photo: Google Street View
+
+### Placeholder Properties Removed
+- Removed 4 placeholder properties with stock images from featured-properties.html
+- Now showing only 3 real sales
+
+### Navigation Updates
+- Added "About" link to header and footer navigation on all pages
+- Removed "Request a CMA" from main nav (still in footer secondary links)
+- Consistent navigation across all 9 pages
+
+### CSS Updates
+- Reduced section padding: 5rem → 3.5rem
+- Reduced hero padding: 6rem → 4rem
+- Reduced hero min-height: 70vh → 50vh
+- Tighter spacing on mobile
+- Reduced focus list and property card margins
+
+### Pages Updated
+- index.html
+- about.html (new)
+- attorney-resources.html
+- services.html
+- featured-properties.html
+- contact.html
+- request-cma.html
+- get-prequalified.html
+- mortgage-calculator.html
+
+---
+
+## Previous Updates
+
+### Profile Photos Added
+- maryj-professional.jpg
+- maryj-studio.png
+- maryj-profile.png
+
+### Placeholder Assets Created
+- placeholder-property.svg
+- placeholder-video.svg
+- placeholder-profile.svg
+- placeholder-hero.svg
+- placeholder-interior.svg
+
+### Hero Images Added
+- Website Hero Image 2400x1350.png (and variants)
+- Website Hero Image 2400x750_Footer.png (and variants)
