@@ -1,5 +1,22 @@
 # MaryJ ATL Website Changelog
 
+## 2026-01-17 — Layout & Social Media Updates
+
+### Homepage Updates
+- Moved UNCoupled section above Featured Properties section
+
+### Strategy Consult Page
+- Changed hero image to strategy-relevant image (planning/analysis)
+
+### Contact Page
+- Added social media links section:
+  - Instagram (@divorcerealtormaryj)
+  - YouTube (@maryj-uncoupled)
+  - Facebook (maryjatl)
+  - TikTok (@maryjatl)
+
+---
+
 ## 2026-01-17 — Royalty-Free Images & Profile Updates
 
 ### Images Added
