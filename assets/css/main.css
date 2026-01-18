@@ -34,10 +34,11 @@
 :root {
   --nav-color: #ffffff;  /* White nav links for accessibility */
   --nav-hover-color: #1A1A1A; /* Black on hover */
-  --nav-mobile-background-color: #C9A227; /* Gold mobile menu background */
+  --nav-mobile-background-color: #F8F5F0; /* Light cream mobile menu background */
   --nav-dropdown-background-color: #ffffff; /* Dropdown background */
   --nav-dropdown-color: #2D2D2D; /* Dropdown text */
   --nav-dropdown-hover-color: #C9A227; /* Gold on dropdown hover */
+  --nav-mobile-active-color: #1A1A1A; /* Black for active link in mobile */
 }
 
 /* Color Presets - Section backgrounds */
@@ -489,10 +490,13 @@ h6 {
     color: var(--contrast-color);
   }
 
-  .navmenu a:hover,
+  .navmenu a:hover {
+    color: var(--nav-dropdown-hover-color);
+  }
+
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: var(--nav-mobile-active-color);
   }
 
   .navmenu .active i,
