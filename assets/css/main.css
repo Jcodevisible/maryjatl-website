@@ -863,7 +863,11 @@ section,
 }
 
 .index-page .hero {
-  padding-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.index-page .home-about {
+  padding-top: 30px;
 }
 
 .hero::before {
@@ -1087,7 +1091,7 @@ section,
 
 .hero .hero-visual .visual-container {
   position: relative;
-  height: 650px;
+  height: auto;
 }
 
 .hero .hero-visual .visual-container .featured-property {
