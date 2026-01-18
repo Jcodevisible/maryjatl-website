@@ -862,6 +862,10 @@ section,
   padding-bottom: 80px;
 }
 
+.index-page .hero {
+  padding-bottom: 20px;
+}
+
 .hero::before {
   content: "";
   position: absolute;

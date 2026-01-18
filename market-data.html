@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Market Data — MaryJ ATL</title>
+  <meta name="description" content="Georgia housing market data and trends to help inform your real estate decisions during life transitions.">
+
+  <!-- Favicons -->
+  <link href="assets/logos/MJ-500x500.png" rel="icon" type="image/png" sizes="any">
+  <link href="assets/logos/MJ-500x500.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Card Containers */
+    .market-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+      height: 100%;
+      text-align: center;
+    }
+    .market-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+      color: #1A1A1A;
+    }
+    .market-card iframe {
+      max-width: 100%;
+      width: 100%;
+      height: 350px;
+      border-radius: 4px;
+    }
+
+    /* Why It Matters Text */
+    .why-it-matters {
+      font-family: 'Inter', sans-serif;
+      color: #2D2D2D;
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.6;
+    }
+
+    /* Stats Box */
+    .stats-box {
+      background: #F8F5F0;
+      border-radius: 6px;
+      padding: 1.25rem;
+      text-align: left;
+      border-left: 3px solid #C9A227;
+    }
+    .stats-box p {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin-bottom: 0.75rem;
+    }
+    .stats-box ul {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #2D2D2D;
+    }
+    .stats-box li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #1A1A1A;
+      margin-bottom: 1rem;
+    }
+    .section-header p {
+      font-family: 'Inter', sans-serif;
+      color: #2D2D2D;
+      font-size: 1rem;
+    }
+
+    /* Buttons */
+    .btn-cta-black {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #1A1A1A;
+      color: #fff !important;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      margin: 0.25rem;
+    }
+    .btn-cta-black:hover {
+      background: #333;
+      color: #fff !important;
+      transform: translateY(-1px);
+    }
+    .btn-cta-gold {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #C9A227;
+      color: #fff !important;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      margin: 0.25rem;
+    }
+    .btn-cta-gold:hover {
+      background: #b89223;
+      color: #fff !important;
+      transform: translateY(-1px);
+    }
+
+    /* CTA Section */
+    .cta-box {
+      background: #F8F5F0;
+      border-radius: 8px;
+      padding: 3rem;
+      text-align: center;
+    }
+    .cta-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      color: #1A1A1A;
+      margin-bottom: 1rem;
+    }
+    .cta-box p {
+      font-family: 'Inter', sans-serif;
+      color: #2D2D2D;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    /* Data Source Note */
+    .data-source {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body class="market-data-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/logos/MJ-500x500.png" alt="MaryJ ATL" style="height: 40px;">
+        <span class="ms-2" style="color: #1A1A1A; font-weight: 600; font-size: 1.5rem; font-family: 'Playfair Display', serif;">MaryJ ATL</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="attorney-resources.html">Attorney Resources</a></li>
+          <li><a href="featured-properties.html">Properties</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="request-cma.html">Request CMA</a></li>
+              <li><a href="mortgage-affordability.html">Mortgage Affordability</a></li>
+              <li><a href="market-data.html" class="active">Market Data</a></li>
+              <li><a href="mortgage-rates-lenders.html">Mortgage Rates</a></li>
+              <li><a href="get-prequalified.html">Get Prequalified</a></li>
+              <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Market Data</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Market Data</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Georgia Housing Market Snapshot Section -->
+    <section class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center section-header">
+            <h2>Georgia Buyer Demand Indicators</h2>
+            <p>Key metrics showing current buyer activity in the Georgia real estate market.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Pending Listings Widget -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="market-card">
+              <h3>Pending Listings</h3>
+              <p class="why-it-matters">Direct measure of buyer demand. High pending counts mean buyers are actively making offers on homes.</p>
+              <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?id=PENLISCOUGA&nsh=1&width=550&height=300&range=custom&cosd=2024-01-01&coed=2026-12-31" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Days on Market Widget -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="market-card">
+              <h3>Days on Market</h3>
+              <p class="why-it-matters">Shows how quickly buyers are purchasing. Fewer days indicates strong demand; more days suggests buyers are hesitant.</p>
+              <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?id=MEDDAYONMARGA&nsh=1&width=550&height=300&range=custom&cosd=2024-01-01&coed=2026-12-31" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p class="data-source">Data sourced from Realtor.com via FRED. Updated monthly.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Georgia Housing Market Snapshot Section -->
+
+    <!-- Additional Market Resources Section -->
+    <section class="section light-background">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center section-header">
+            <h2>Georgia Market Resources</h2>
+            <p>Additional data sources for understanding housing supply and demand.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Redfin Card -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="market-card">
+              <h3><i class="bi bi-graph-up me-2" style="color: #C9A227;"></i>Redfin Market Data</h3>
+              <p class="why-it-matters">Real-time supply and demand metrics including homes for sale, sale-to-list ratios, and price trends.</p>
+              <div class="stats-box">
+                <p>Current Georgia Stats</p>
+                <ul class="list-unstyled mb-0">
+                  <li>Median Sale Price: $369,000</li>
+                  <li>Days on Market: 74 days</li>
+                  <li>Homes for Sale: 56,979 (up 15.1% YoY)</li>
+                  <li>Sale-to-List Ratio: 97.2%</li>
+                </ul>
+              </div>
+              <a href="https://www.redfin.com/state/Georgia/housing-market#supply" target="_blank" rel="noopener" class="btn-cta-black mt-4">
+                <i class="bi bi-box-arrow-up-right me-1"></i> View Redfin Data
+              </a>
+            </div>
+          </div>
+
+          <!-- Houzeo Card -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="market-card">
+              <h3><i class="bi bi-house-door me-2" style="color: #C9A227;"></i>Houzeo Market Analysis</h3>
+              <p class="why-it-matters">Housing demand trends, market forecasts, and buyer activity indicators.</p>
+              <div class="stats-box">
+                <p>Current Georgia Stats</p>
+                <ul class="list-unstyled mb-0">
+                  <li>Median Listing Price: $385,000</li>
+                  <li>Months of Supply: 7.6 months</li>
+                  <li>Price Drops: 20.6% of listings</li>
+                  <li>Market Status: Shifting toward buyers</li>
+                </ul>
+              </div>
+              <a href="https://www.houzeo.com/housing-market/georgia#housing-demand" target="_blank" rel="noopener" class="btn-cta-black mt-4">
+                <i class="bi bi-box-arrow-up-right me-1"></i> View Houzeo Data
+              </a>
+            </div>
+          </div>
+
+          <!-- Georgia Association of REALTORS Card -->
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="market-card">
+              <h3><i class="bi bi-file-earmark-pdf me-2" style="color: #C9A227;"></i>Georgia Association of REALTORS Reports</h3>
+              <p class="why-it-matters" style="max-width: 600px; margin: 0 auto 1.5rem;">Official statewide housing market reports compiled from 14 MLSs representing over 92% of Georgia real estate activity.</p>
+              <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a href="https://gar.stats.showingtime.com/docs/ann/x/report" target="_blank" rel="noopener" class="btn-cta-gold">
+                  <i class="bi bi-file-pdf me-1"></i> 2025 Annual Housing Report
+                </a>
+                <a href="https://gar.stats.showingtime.com/docs/mmi/x/GeorgiaAssociationofREALTORS" target="_blank" rel="noopener" class="btn-cta-gold">
+                  <i class="bi bi-calendar-month me-1"></i> Monthly Market Indicators
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Additional Market Resources Section -->
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+            <div class="cta-box">
+              <h3>Ready to Understand Your Options?</h3>
+              <p>Market conditions are one factor in your real estate decisions. Schedule a consult to discuss how timing and rates affect your situation.</p>
+              <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a href="strategy-consult.html" class="btn-cta-gold">Request Strategy Consult</a>
+                <a href="mortgage-rates-lenders.html" class="btn-cta-black">
+                  <i class="bi bi-percent me-1"></i> View Mortgage Rates
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /CTA Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/logos/MJ-500x500.png" alt="MaryJ ATL" style="height: 40px;">
+            <span class="ms-2" style="color: #FFFFFF; font-weight: 600; font-size: 1.5rem; font-family: 'Playfair Display', serif;">MaryJ ATL</span>
+          </a>
+          <p>Real estate guidance for divorce, separation, and major life transitions.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.instagram.com/divorcerealtormaryj/" target="_blank" rel="noopener" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@maryj-uncoupled" target="_blank" rel="noopener" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/maryjatl/" target="_blank" rel="noopener" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@maryjatl" target="_blank" rel="noopener" title="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="attorney-resources.html">Attorney Resources</a></li>
+            <li><a href="featured-properties.html">Properties</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="request-cma.html">Request CMA</a></li>
+            <li><a href="mortgage-affordability.html">Mortgage Affordability</a></li>
+            <li><a href="market-data.html">Market Data</a></li>
+            <li><a href="mortgage-rates-lenders.html">Mortgage Rates</a></li>
+            <li><a href="get-prequalified.html">Get Prequalified</a></li>
+            <li><a href="strategy-consult.html">Strategy Consult</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact</h4>
+          <p>Jameela Esa, REALTOR</p>
+          <p>License #400282</p>
+          <p>Keller Williams Realty Atlanta Partners NE</p>
+          <img src="assets/logos/kwlogo.jpg" alt="Keller Williams" style="height: 30px;" class="mt-2">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>Each office is independently owned and operated.</p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
