@@ -34,10 +34,11 @@
 :root {
   --nav-color: #ffffff;  /* White nav links for accessibility */
   --nav-hover-color: #1A1A1A; /* Black on hover */
-  --nav-mobile-background-color: #C9A227; /* Gold mobile menu background */
+  --nav-mobile-background-color: #F8F5F0; /* Light cream mobile menu background */
   --nav-dropdown-background-color: #ffffff; /* Dropdown background */
   --nav-dropdown-color: #2D2D2D; /* Dropdown text */
   --nav-dropdown-hover-color: #C9A227; /* Gold on dropdown hover */
+  --nav-mobile-active-color: #1A1A1A; /* Black for active link in mobile */
 }
 
 /* Color Presets - Section backgrounds */
@@ -489,10 +490,13 @@ h6 {
     color: var(--contrast-color);
   }
 
-  .navmenu a:hover,
+  .navmenu a:hover {
+    color: var(--nav-dropdown-hover-color);
+  }
+
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: var(--nav-mobile-active-color);
   }
 
   .navmenu .active i,
@@ -6648,14 +6652,34 @@ section,
     gap: 30px;
   }
 
+  .services .service-block .service-header {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+
+  .services .service-block .service-body {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
   .services .service-block .service-content {
     text-align: center !important;
+  }
+
+  .services .service-block .service-image-wrapper {
+    width: 100%;
+    max-width: 400px;
   }
 
   .services .service-block .service-image {
     width: 100%;
     max-width: 400px;
     height: 250px;
+    margin: 0 auto;
+  }
+
+  .services .service-block .service-action {
+    text-align: center !important;
   }
 
   .services .cta-section {
@@ -6679,17 +6703,35 @@ section,
 
 @media (max-width: 768px) {
   .services .service-block {
-    padding: 30px 25px;
+    padding: 25px 20px;
   }
 
   .services .service-number {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .services .service-header h4 {
+    font-size: 1.25rem;
+  }
+
+  .services .service-info p {
+    font-size: 0.95rem;
   }
 
   .services .service-info h4 {
     font-size: 24px;
+  }
+
+  .services .service-image-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .services .service-image {
+    height: 200px;
+    max-width: 100%;
   }
 
   .services .service-features li {
