@@ -806,7 +806,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 0px;
   overflow: clip;
 }
 
@@ -856,7 +856,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding-top: 80px;
+  padding-top: 20px;
   background: linear-gradient(45deg, var(--background-color) 0%, color-mix(in srgb, var(--accent-color), transparent 95%) 100%);
   min-height: 80vh;
   display: flex;
@@ -866,8 +866,13 @@ section,
   padding-bottom: 80px;
 }
 
-.index-page .hero {
-  padding-bottom: 0;
+.hero.section {
+  padding-top: 20px;
+}
+
+.index-page .hero.section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .index-page .home-about {
