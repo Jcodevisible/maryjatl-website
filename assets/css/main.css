@@ -870,9 +870,13 @@ section,
   padding-top: 20px;
 }
 
-.index-page .hero.section {
-  padding-top: 0 !important;
+.index-page .hero.section,
+.index-page .hero,
+.index-page #hero {
+  padding-top: 80px !important;
   padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  min-height: auto !important;
 }
 
 .index-page .home-about {
@@ -1269,6 +1273,12 @@ section,
     padding: 100px 0 60px;
   }
 
+  .index-page .hero {
+    padding-top: 80px !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
+  }
+
   .hero .hero-visual {
     margin-top: 60px;
   }
@@ -1315,6 +1325,12 @@ section,
 @media (max-width: 576px) {
   .hero {
     padding: 80px 0 40px;
+  }
+
+  .index-page .hero {
+    padding-top: 80px !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
   }
 
   .hero .hero-content .content-header .hero-label {
