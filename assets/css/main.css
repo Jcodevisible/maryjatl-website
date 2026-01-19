@@ -6470,6 +6470,8 @@ section,
   font-weight: 600;
   font-size: 15px;
   transition: all 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .services .service-btn:hover {
